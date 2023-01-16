@@ -13,11 +13,11 @@ const AllRoutes = () => {
   return (
     <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/" element={<Store />}></Route>
-        <Route path="/" element={<Ipad />}></Route>
-        <Route path="/" element={<Iphone />}></Route>
-        <Route path="/" element={<Mac />}></Route>
-        <Route path="/" element={<Watch />}></Route>
+        <Route path="/store" element={<Store />}></Route>
+        <Route path="/ipad" element={<Ipad />}></Route>
+        <Route path="/iphone" element={<Iphone />}></Route>
+        <Route path="/mac" element={<Mac />}></Route>
+        <Route path="/watch" element={<Watch />}></Route>
         <Route path="/test" element={<Home />}></Route>
         <Route path="*" element={<h1>Hello</h1>}></Route>
     </Routes>
