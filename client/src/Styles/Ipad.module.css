@@ -1,1 +1,21 @@
 /* Ipad page css */
+
+.ipad_one{
+    /* background-image: url("https://www.apple.com/v/ipad-10.9/b/images/overview/hero/hero__ecv967jz1y82_large.jpg");
+    background-repeat: no-repeat;
+    background-position:left ; */
+    min-height: 600px;
+    /* z-index: -1; */
+    /* background-size: cover; */
+    cursor: pointer;
+}
+.ipad_acc{
+    background-image: url("https://www.apple.com/v/ipad/home/cd/images/overview/accessories__gdpezee1naai_medium.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 738px 339px;
+    min-height: 700px;
+    z-index: 1;
+    background-size: cover;
+    cursor: pointer;
+}
