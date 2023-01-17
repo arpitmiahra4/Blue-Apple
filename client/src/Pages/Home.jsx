@@ -5,13 +5,17 @@ import styles from "../Styles/Home.module.css"
 import { AiFillApple } from "react-icons/ai";
 import GridComponent from '../Components/Home/GridComponent';
 import HomeCarousel from '../Components/Home/HomeCarousel';
+// import TopDrawer from '../Components/Home/TopDrawer';
+// import allData from '../Components/Home/allData';
 const Home = () => {
   return (
     <>
-    <MetaData title={"Apple (India)"}/>
-
+    <MetaData title={"BlueApple (India)"}/>
+    {/* <Box>
+      <TopDrawer data={allData.topDrawer.data1} />
+    </Box> */}
     <Box w={"100%"}>
-    <Box w={"100%"} display={"flex"} alignItems="center" justifyContent={"center"} h={"50px"}>
+    <Box w={"100%"} display={"flex"} alignItems="center" fontSize={13} justifyContent={"center"} h={"50px"}>
     Get up to ₹6000 instant savings on orders over ₹41900 with HDFC Bank credit cards.‡ Plus No Cost EMI from most leading banks.‡‡ Shop now &gt;
     </Box>
     {/* first box */}
