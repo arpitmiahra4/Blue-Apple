@@ -10,12 +10,45 @@
     cursor: pointer;
 }
 .ipad_acc{
-    background-image: url("https://www.apple.com/v/ipad/home/cd/images/overview/accessories__gdpezee1naai_medium.jpg");
+    background-image: url("https://www.apple.com/v/ipad/home/cd/images/overview/accessories__gdpezee1naai_large.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 738px 339px;
-    min-height: 700px;
+    background-size: 1057px 432px;
+    min-height: 432px;
+    z-index: 1;
+    /* background-size: cover; */
+    cursor: pointer;
+}
+.ipad_os16{
+    background-image: url("https://www.apple.com/v/ipad/home/cd/images/overview/ipados16__9t47xpd66wiq_large.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1310px 485px;
+    min-height: 485px;
+    z-index: 1;
+    /* background-size: cover; */
+    cursor: pointer;
+}
+.ipad_gthree{
+    background-image: url("https://www.apple.com/v/ipad/home/cd/images/overview/apple_card_banner/acmi/apple_card_monthly_installments__fhqbbrc4alm6_large.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 580px;
     z-index: 1;
     background-size: cover;
-    cursor: pointer;
+    cursor: pointer; 
+}
+.ipad_gfour{
+    background-image: url("https://www.apple.com/v/ipad/home/cd/images/overview/trade_in__ejwkdm497no2_large.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 580px;
+    z-index: 1;
+    background-size: cover;
+    cursor: pointer; 
+}
+.ipad_bgrid{
+    margin-top: 10px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
 }

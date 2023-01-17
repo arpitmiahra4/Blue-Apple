@@ -2,6 +2,7 @@ import { Box, Flex, Text, Image, Stack, Button } from "@chakra-ui/react";
 import React from "react";
 import MetaData from "../Components/Home/MetaData";
 import styles from "../Styles/Ipad.module.css";
+import Grid1Ipad from '../Components/Ipad/Grid1Ipad';
 
 //import { AiFillApple } from "react-icons/ai";
 
@@ -104,25 +105,57 @@ const Ipad = () => {
         </Box>
 
         {/* accessories box */}
-        <Box w={"90%"} className={styles.ipad_acc}>
+        <Box w={"94%"} border={"1px solid teal"}  ml={"3%"}>
           <Box pt={5}>
-            <Text color={"black"} fontSize={28} fontWeight="bold">
+            <Text color={"black"} fontSize={35} fontWeight="bold">
               Accessories
             </Text>
-            <Text color={"black"} fontSize={15} fontWeight="bold">
-              Explore cases, covers, keyboards, Apple Pencil, AirPods, and more.
+            <Text color={"black"} fontSize={21} fontWeight="400"
+             >
+              Explore cases, covers, keyboards, 
+            </Text>
+            <Text color={"black"} fontSize={21} fontWeight="400"
+             >
+               Apple Pencil, AirPods, and more.
             </Text>
 
             <Text
+            mt={"1%"}
               color={"#175590"}
               fontWeight="bold"
-              fontSize={25}
+              fontSize={20}
               _hover={{ textDecoration: "underline" }}
             >
               Shop iPad accessories &gt;
             </Text>
+            <Box className={styles.ipad_acc}  border={"1px solid red"} ></Box>
           </Box>
         </Box>
+
+         {/* ipad OS16 box */}
+         <Box w={"94%"} border={"1px solid teal"}  ml={"3%"}>
+          <Box pt={5}>
+            <Text color={"black"} fontSize={35} fontWeight="bold">
+            iPadOS 16
+            </Text>
+            <Text color={"black"} fontSize={21} fontWeight="400"
+             >
+              Incredibly capable. Unmistakably iPad.
+            </Text>
+
+            <Text
+            mt={"1%"}
+              color={"#175590"}
+              fontWeight="bold"
+              fontSize={20}
+              _hover={{ textDecoration: "underline" }}
+            >
+              Learn more &gt;
+            </Text>
+            <Box className={styles.ipad_os16}  border={"1px solid red"} ></Box>
+          </Box>
+        </Box>
+        <Grid1Ipad/>
       </Box>
     </>
   );
