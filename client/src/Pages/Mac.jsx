@@ -1,9 +1,11 @@
 import React from 'react'
-
+import Navbar from '../Components/Navbar';
 const Mac = () => {
   return (
-    <div>Mac</div>
+    <>
+<Navbar />
+    </>
   )
 }
 
-export default Mac
+export default Mac;
