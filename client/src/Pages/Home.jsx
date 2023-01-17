@@ -12,7 +12,7 @@ const Home = () => {
     <>
     <MetaData title={"BlueApple (India)"}/>
     {/* <Box>
-      <TopDrawer data={allData.topDrawer.data1} />
+      <TopDrawer data={allData.topDrawer.mac} />
     </Box> */}
     <Box w={"100%"}>
     <Box w={"100%"} display={"flex"} alignItems="center" fontSize={13} justifyContent={"center"} h={"50px"}>

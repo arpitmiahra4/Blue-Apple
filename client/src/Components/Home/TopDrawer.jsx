@@ -1,4 +1,4 @@
-import { Box, Image, Text} from '@chakra-ui/react'
+import { Box, Text} from '@chakra-ui/react'
 import { Link } from 'react-router-dom';
 
 
@@ -18,14 +18,13 @@ const TopDrawer = ({data}) => {
        }
 
   return (
-    <Box bgColor={""} >
-        <Box id="sujeet"  style={hstyle} m="auto" p="15px"  justifyContent={!mediumScreen && document?.getElementById("sujeet")?.scrollWidth > document?.getElementById("sujeet")?.clientWidth?"left":"center"}>
+    <Box bgColor={"#f9f9fa"} >
+        <Box id="arpit"  style={hstyle} m="auto" p="15px"  justifyContent={!mediumScreen && document?.getElementById("arpit")?.scrollWidth > document?.getElementById("arpit")?.clientWidth?"left":"center"}>
            {data && data.map((el,i)=>(
-           <Link to={el.link} key={i}><Box  minW={"80px"} _hover={{color:"#44d62c"}} cursor="pointer"  margin={"auto"} textAlign="center" h="80px">
-                <Box  style={{display:"flex",alignItems:"center",justifyContent:"center"}} margin={"auto"} h="80%">
-                    <Image src={el.img} />
+           <Link to={el.link} key={i}><Box  minW={"80px"} _hover={{color:"blue"}} cursor="pointer"  margin={"auto"} textAlign="center" h="80px">
+                <Box style={{display:"flex",alignItems:"center",justifyContent:"center"}} margin={"auto"} h="80%" bgImage={el.img} bgSize="contain" bgPosition={"center"} bgRepeat={"no-repeat"} >
                 </Box>
-                <Text _hover={{color:"#44d62c"}} mt="-5px" fontSize={"13px"} >{el.title} </Text>
+                <Text _hover={{color:"blue"}} mt="-5px" fontSize={"13px"} >{el.title}</Text>
             </Box>
             </Link> 
            ))}

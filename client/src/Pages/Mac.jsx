@@ -25,7 +25,7 @@ MacBook Air</p></a></div>
   <p>Get 3% Daily Cash back with Apple Card. And pay for your new Mac over 12 months, interest‑free when you choose to check out with Apple Card Monthly Installments.*</p>
   <a href="#" title='offer'>Learn more {">"}</a>
 </div>
-
+{/* new product components */}
 <div className={styles.mac}>
   <div>
     <p style={{color:"#F57126", fontSize:"18px", fontWeight:"600"}}>New</p>
@@ -55,6 +55,38 @@ MacBook Air</p></a></div>
 
   </div>
 </div>
+<br />
+<div className={styles.mac} style={{backgroundColor:"black"}}>
+  <div>
+    <p style={{color:"#F57126", fontSize:"18px", fontWeight:"600"}}>New</p>
+    <h2 style={{color:"white"}}>MacBook Pro</h2>
+    <h3 style={{color:"white"}}>Mover. Maker. Boundary breaker.</h3>
+    <p style={{color:"white"}}>From $1999</p>
+    <button style={{width:"80px", height:"auto", padding:"5px 0px", backgroundColor:"#1577ED", borderRadius:"20px", color:"white", margin:"20px 0px"}}>Buy</button>
+    <a href="#" className={styles.learn}>Learn more {">"}</a>
+  </div>
+  <div className={styles.macImg}>
+   <center> <img src="https://www.apple.com/v/mac/home/bs/images/overview/hero/macbook_pro_14_16__dmqm5vr9l7yq_large.jpg" alt="macbook" style={{margin:"20px 0px"}}/></center>
+
+  </div>
+</div>
+<br />
+
+<div className={styles.mac} style={{backgroundColor:"black"}}>
+  <div>
+    <p style={{color:"#F57126", fontSize:"18px", fontWeight:"600"}}>New</p>
+    <h2 style={{color:"white"}}>Mac mini</h2>
+    <h3 style={{color:"white"}}>More muscle. More hustle.</h3>
+    <p style={{color:"white"}}>From $599</p>
+    <button style={{width:"80px", height:"auto", padding:"5px 0px", backgroundColor:"#1577ED", borderRadius:"20px", color:"white", margin:"20px 0px"}}>Buy</button>
+    <a href="#" className={styles.learn}>Learn more {">"}</a>
+  </div>
+  <div className={styles.macImg}>
+   <center> <img src="/mac/macMini.png" alt="macbook" style={{margin:"10px 0px"}}/></center>
+
+  </div>
+</div>
+
     </>
   )
 }
