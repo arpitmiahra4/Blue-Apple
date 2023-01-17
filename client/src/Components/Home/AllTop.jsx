@@ -20,10 +20,4 @@
 //   )
 // }
 
-// export default AllTop
-
-// import AllTop from '../Components/Home/AllTop';
-
-// <Box w={"100%"} bg="#f9f9fa">
-//  <AllTop />
-//  </Box>
+//  export default AllTop;
