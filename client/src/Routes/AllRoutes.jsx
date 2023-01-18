@@ -1,5 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import Login from '../Pages/Authentication/Login'
+import Register from '../Pages/Authentication/Register'
 import Home from '../Pages/Home'
 import Ipad from '../Pages/Ipad'
 import Iphone from '../Pages/Iphone'
@@ -20,6 +22,8 @@ const AllRoutes = () => {
         <Route path="/watch" element={<Watch />}></Route>
         <Route path="/test" element={<Home />}></Route>
         <Route path="*" element={<h1>Hello</h1>}></Route>
+        <Route path="/register" element={<Register />}></Route>
+        <Route path="/login" element={<Login />}></Route>
     </Routes>
   )
 }
