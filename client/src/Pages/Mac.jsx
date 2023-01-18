@@ -86,6 +86,29 @@ MacBook Air</p></a></div>
 
   </div>
 </div>
+<br />
+
+<div className={styles.banner3}>
+  <center><img src="https://www.apple.com/v/mac/home/bs/images/overview/holiday-2023/cny23_familypage_banner_bunnylogo__dr5frkhw4g8y_large.png" alt="icon" /></center>
+  <h2 style={{color:"white"}}>
+A gift for every wish.</h2>
+  <p style={{color:"white", fontSize:"25px", fontWeight:"400"}}>Find something for everyone.</p>
+  <p style={{color:"white", fontSize:"25px", fontWeight:"400"}}>this Lunar New Year.</p>
+  <a href="https://www.apple.com/us/shop/goto/gifts/chinese_new_year" className={styles.learn} style={{color:"white"}}>Shop the gift guide{">"}</a>
+</div>
+<br />
+<div className={styles.banner}>
+  <h2 style={{color:"white"}}>Apple at Work</h2>
+  <p style={{color:"white", fontSize:"25px", fontWeight:"400"}}>Get the power to take your business to the next level.</p>
+  <a href="https://www.apple.com/business/" className={styles.learn} style={{color:"white"}}>Learn about Apple at Work {">"}</a>
+</div>
+<br />
+
+<div className={styles.banner2}>
+  <h2 style={{color:"white"}}>Apple and Education</h2>
+  <p style={{color:"white", fontSize:"25px", fontWeight:"400"}}>Empowering educators and students to move the world forward.</p>
+  <a href="https://www.apple.com/business/" className={styles.learn} style={{color:"white"}}>Learn about Apple and Education{">"}</a>
+</div>
 
     </>
   )
