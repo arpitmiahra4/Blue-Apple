@@ -1,1 +1,97 @@
 /* Iphone page css */
+
+.alok_one{
+    background-image: url("https://www.apple.com/v/home/aw/images/heroes/iphone-14-pro/hero_iphone14pro__e5xbgo5ffhg2_large.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 700px;
+    z-index: 1;
+    background-size: cover;
+    cursor: pointer;
+    
+}
+
+.alok_two{
+    background-image: url("https://www.apple.com/in/home/heroes/iphone-14/images/hero_iphone14_preorder__c4g2wjzuugqe_large.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 700px;
+    z-index: 1;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.alok_three1{
+    background-color: white;
+    min-height: 800px;
+    
+    display: flex;
+    padding-left: 50px;
+}
+
+.alok_three3{
+    background-image: url("https://www.apple.com/v/iphone/home/bk/images/overview/hero/iphone_se_hero__gd586pazxqqa_large.jpg");
+}
+
+.alok_three2{
+    padding-top: 25%;
+}
+
+
+.alok_four{
+    background-image: url("https://www.apple.com/v/iphone/home/bk/images/overview/subhero/guided_tour__c40f88on9o8y_large.jpg");
+    width: auto;
+    height:800px;
+    padding: -50px;
+    border-radius: 20px;
+    margin-top: 10px;
+    
+}
+
+.alok_four1{
+    margin-left: -45%;
+    padding-top: 23%;
+}
+
+.alok_five{
+    height:800px;
+    background-color: white;
+    margin: auto;
+   
+    align-items: center;
+}
+
+.alok_five1{
+    gap: 80px;
+    margin: auto;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.alok_six{
+    gap: 120px;
+    margin: auto;
+    justify-content: center;
+    margin-top: 3px;
+    margin-left: -5%;
+}
+
+.alok_seven{
+    grid-template-columns: repeat(4,1fr);
+   margin-top: 50px;
+   width: 75%;
+   margin-left: 12%;
+   
+}
+
+.alok_eight{
+
+    background-image: url("https://www.apple.com/v/iphone/home/bk/images/overview/cny-2023/cny23_familypage_banner_iphone__eozo8ckz8g02_large.jpg");
+    color: white;
+    width:90%;
+    height: 500px;
+    margin-left: 5%;
+    padding-top: 5%;
+   text-align: center;
+   font-size: 20px;
+}
