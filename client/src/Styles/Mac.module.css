@@ -1,1 +1,146 @@
 /* mac page css */
+.tp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100px;
+    gap: 10px;
+    font-size: 11px;
+    text-align: center;
+}
+.tp div{
+    width: 90px;
+    height: 80px;
+}
+.tp img{
+    width: 100px;
+    height: 50px;
+
+}
+
+.offer{
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+    background-color: #F5F5F7;
+}
+.offer p{
+    width: 80%;
+    height: auto;
+    font-size: 13px;
+margin: 0px auto;
+}
+.offer a{
+    color: #007bff;
+    font-size: 12px;
+    font-weight: 400;
+}
+.offer a:hover{
+    text-decoration: underline;
+}
+
+.mac{
+    width: 100%;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0px 20px 0px;
+}
+
+
+.learn{
+    color: #007bff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+.learn:hover{
+    text-decoration: underline;
+}
+
+.mac div h2, .banner h2, .banner2 h2, .banner3 h2{
+font-size: 60px;
+font-weight: 600;
+}
+.mac div h3{
+    font-size: 28px;
+font-weight: 600;
+}
+
+/* banner code  */
+.banner{
+    width: 95%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0px;
+z-index: 0;
+background-repeat: no-repeat;
+    background-image: url('https://www.apple.com/v/mac/home/bs/images/overview/get-more/business__dhhbnntkcwuq_large.jpg');
+}
+.banner2{
+    width: 95%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0px;
+z-index: 0;
+background-repeat: no-repeat;
+    background-image: url('https://www.apple.com/v/mac/home/bs/images/overview/get-more/education__bq047y5fu7n6_large.jpg');
+}
+.banner3{
+    width: 95%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0px;
+z-index: 0;
+background-repeat: no-repeat;
+    background-image: url('https://www.apple.com/v/mac/home/bs/images/overview/holiday-2023/cny23_familypage_banner__f2ocdw1w53yq_large.jpg');
+}
+
+@media screen and (min-width: 320px) and (max-width:420px){
+    /* CSS rules here */
+    .tp{
+        font-size: 11px;
+        overflow-y: scroll;
+        width: 100vw;
+        gap:30px;
+        padding: 0px 20px;
+    }
+    .tp div{
+        width: 300px;
+        height: auto;
+    }
+    .tp div img{
+        width: 100%;
+        height: 50px;
+    }
+   .mac div:nth-child(1){
+    padding: 0px 10px;
+   }
+   .mac div:nth-child(1) h2{
+    font-size: 40px;
+   }
+   .mac div:nth-child(1) h3{
+    font-size: 25px;
+   }
+   .macImg img{
+    width: 200px;
+    height: 200px;
+   }
+}
