@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "../Styles/Mac.module.css";
+import img from"../assets/mac/macMini.png";
 const Mac = () => {
   return (
     <>
@@ -82,7 +83,7 @@ MacBook Air</p></a></div>
     <a href="#" className={styles.learn}>Learn more {">"}</a>
   </div>
   <div className={styles.macImg}>
-   <center> <img src="/mac/macMini.png" alt="macbook" style={{margin:"10px 0px"}}/></center>
+   <center> <img src={img} alt="macbook" style={{margin:"10px 0px"}}/></center>
 
   </div>
 </div>
