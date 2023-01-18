@@ -47,6 +47,71 @@
     background-size: cover;
     cursor: pointer; 
 }
+/* For  Ipad 3 grid component  starts*/
+.ipad_iCloud{
+    background-image: url("https://www.apple.com/v/ipad/home/cd/images/overview/icloud__czqjzr040qc2_large.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 594px 280px;
+    min-height: 280px;
+    z-index: 1;
+    /* background-size: cover; */
+    cursor: pointer;
+}
+
+.ipad_iPay{
+    background-image: url("https://www.apple.com/v/ipad/home/cd/images/overview/apple_pay__u03k08osmwy2_large.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 388px 281px;
+    min-height: 281px;
+    z-index: 1;
+    /* background-size: cover; */
+    cursor: pointer;
+}
+
+.ipad_b3Grid{
+    margin-top: 20px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    width:96%;
+    margin-left: 2%;
+}
+/* For Ipad 3 grid component  ends*/
+
+
+
+/* For Big Ipad grid component */
+.ipad_iFitness{
+    background-image: url("https://www.apple.com/v/ipad/home/cd/images/overview/apple_fitness_plus/fitness_plus__edi7q3m2m2qa_large.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 466px 341px;
+    min-height: 341px;
+    z-index: 1;
+    /* background-size: cover; */
+    cursor: pointer;
+}
+/* Note : Arcade image needed to be changed */
+.ipad_iArcade{
+    background-image: url("https://www.apple.com/v/ipad/home/cd/images/overview/apple_pay__u03k08osmwy2_large.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 388px 281px;
+    min-height: 281px;
+    z-index: 1;
+    /* background-size: cover; */
+    cursor: pointer;
+}
+
+.ipad_bigGrid{
+    margin-top: 20px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    width:96%;
+    margin-left: 2%;
+}
+/* For Big Ipad grid component ends */
 .ipad_bgrid{
     margin-top: 10px;
     grid-template-columns: repeat(2,1fr);

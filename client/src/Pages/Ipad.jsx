@@ -3,6 +3,10 @@ import React from "react";
 import MetaData from "../Components/Home/MetaData";
 import styles from "../Styles/Ipad.module.css";
 import Grid1Ipad from '../Components/Ipad/Grid1Ipad';
+import Grid3Ipad from '../Components/Ipad/Grid3Ipad';
+import GridBigIpad from '../Components/Ipad/GridBigIpad';
+import TopDrawer from '../Components/Home/TopDrawer';
+import allData from '../Components/Home/allData';
 
 //import { AiFillApple } from "react-icons/ai";
 
@@ -10,8 +14,11 @@ const Ipad = () => {
   return (
     <>
       <MetaData title={"iPad-Apple"} />
+       <Box>
+      <TopDrawer data={allData.topDrawer.ipad} />
+    </Box>
 
-      <Box w={"100%"}>
+      <Box w={"100%"} backgroundColor={"#f5f5f7"} >
         <Box
           w={"100%"}
           display={"flex"}
@@ -156,6 +163,8 @@ const Ipad = () => {
           </Box>
         </Box>
         <Grid1Ipad/>
+        <Grid3Ipad/>
+        <GridBigIpad/>
       </Box>
     </>
   );
