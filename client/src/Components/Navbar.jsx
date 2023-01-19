@@ -313,14 +313,14 @@ const Navbar = () => {
               >
                Support
               </Button></Link>
-              <Button
+              <Link to="/login"><Button
                 _hover={{ bg: "#313132", color: "white" }}
                 variant="ghost"
                 color="white"
                 size="sm"
               >
                 <BiSearch size={20} />
-              </Button>
+              </Button></Link>
               <Link to="/register"><Button
                 _hover={{ bg: "#313132", color: "white" }}
                 color="white"

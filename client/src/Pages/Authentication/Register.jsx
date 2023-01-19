@@ -4,26 +4,29 @@ import {
   Checkbox,
   Divider,
   Flex,
+  Image,
   Input,
   Select,
   Stack,
   Text,
+  useToast,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 import axios from "axios";
 import MetaData from "../../Components/Home/MetaData";
-import { Progress } from '@chakra-ui/react'
+
 const Register = () => {
   const [first_name, setFirst_name] = useState("");
   const [last_name, setLast_name] = useState("");
-  const [country, setCountry] = useState("");
+  const [country, setCountry] = useState("india");
   const [dob, setDob] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirm_password, setConfirm_password] = useState("");
-  const [phoneCountry, setPhoneCountry] = useState("");
+  const [phoneCountry, setPhoneCountry] = useState("+91");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [loader, setLoader]=useState(false);
+  const toast = useToast()
 
 let userData = {
   first_name,
@@ -42,6 +45,13 @@ setLoader(true)
     try {
       await axios.post("https://mock-server-686g.onrender.com/blueRegister", userData);
       setLoader(false)
+      toast({
+        title: 'Account created.',
+        description: "We've created your account for BlueApple.",
+        status: 'success',
+        duration: 5000,
+        isClosable: true,
+      })
     } catch (err) {
       console.error(err);
       setLoader(false)
@@ -49,15 +59,11 @@ setLoader(true)
   };
 
 if(loader===true){
-    return <Progress size='xs' isIndeterminate />
+    return  <Image src="https://thumbs.gfycat.com/RipeLastIcefish-size_restricted.gif" m={"auto"} w="30%"/>
 }
   return (
     <>
-    {/* if(loader===true){
-    return <Progress size='xs' isIndeterminate />
-} */}
-
-{loader === true ? <Progress size='xs' isIndeterminate /> : console.log("false")}
+{loader === true ? <Image src="https://thumbs.gfycat.com/RipeLastIcefish-size_restricted.gif" /> :console.log("error")}
       <MetaData title={"Create Your BlueApple ID - BlueApple(IN)"} />
       <Box w={"100%"} borderBottom="1px solid gray">
         <Flex justifyContent={"space-evenly"} gap={10} alignItems="center">
@@ -125,16 +131,15 @@ if(loader===true){
               <Text>COUNTRY / REGION</Text>
               <Stack spacing={3} m="auto" mb={2}>
                 <Select
-                  placeholder="India"
                   m="auto"
                   w={"65%"}
                   h={50}
                   fontSize="20px"
                   onChange={(e)=>setCountry(e.target.value)}
                 >
-                  <option value="option1">Pakistan</option>
-                  <option value="option2">China</option>
-                  <option value="option3">indore</option>
+                  <option value="india">India</option>
+                  <option value="pakistan">Pakistan</option>
+                  <option value="china">China</option>
                 </Select>
               </Stack>
               <Input
@@ -190,7 +195,6 @@ if(loader===true){
             <Box>
               <Stack spacing={3} m="auto" mb={2}>
                 <Select
-                  placeholder="+91 (India)"
                   m="auto"
                   w={"65%"}
                   h={50}
@@ -198,9 +202,8 @@ if(loader===true){
                   border={"1px solid gray"}
                   onChange={(e)=>setPhoneCountry(e.target.value)}
                 >
-                  <option value="91">+91 (India)</option>
-                  <option value="option2">China</option>
-                  <option value="option3">indore</option>
+                  <option value="+91">+91 India</option>
+                  <option value="+86">+86 China</option>
                 </Select>
               </Stack>
               <Input
