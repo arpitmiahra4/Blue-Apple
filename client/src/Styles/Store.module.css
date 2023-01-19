@@ -14,10 +14,16 @@
   -webkit-text-fill-color: transparent;
 }
 .gyay_teal{
-    background-image: linear-gradient(to top , rgb(109, 28, 162) , teal);
+  background-image: url("https://www.teahub.io/photos/full/156-1569507_abstract-dark-gradient-pink-wallpaper-iphone-wallpaper-dark.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 650px;
+  z-index: 1;
+  background-size: cover;
+  cursor: pointer;
 }
-.text_login{
+/* .text_login{
     background: -webkit-linear-gradient(white,rgb(245, 114, 8) );
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
