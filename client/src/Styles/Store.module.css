@@ -1,1 +1,23 @@
 /* store page css */
+.log_main{
+    background-image: url("https://www.teahub.io/photos/full/9-93723_high-resolution-black-hd-1080p-wallpaper-id-black.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 650px;
+    z-index: 1;
+    background-size: cover;
+    cursor: pointer;
+}
+.text_log{
+    background: -webkit-linear-gradient(rgb(213, 17, 138), teal);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gyay_teal{
+    background-image: linear-gradient(to top , rgb(109, 28, 162) , teal);
+}
+.text_login{
+    background: -webkit-linear-gradient(white,rgb(245, 114, 8) );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

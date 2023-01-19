@@ -4,15 +4,17 @@ import {
   Checkbox,
   Divider,
   Flex,
+  Image,
   Input,
   Select,
   Stack,
   Text,
+  useToast,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 import axios from "axios";
 import MetaData from "../../Components/Home/MetaData";
-import { Progress } from '@chakra-ui/react'
+
 const Register = () => {
   const [first_name, setFirst_name] = useState("");
   const [last_name, setLast_name] = useState("");
@@ -24,6 +26,7 @@ const Register = () => {
   const [phoneCountry, setPhoneCountry] = useState("+91");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [loader, setLoader]=useState(false);
+  const toast = useToast()
 
 let userData = {
   first_name,
@@ -38,11 +41,17 @@ let userData = {
 }
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(userData);
 setLoader(true)
     try {
       await axios.post("https://mock-server-686g.onrender.com/blueRegister", userData);
       setLoader(false)
+      toast({
+        title: 'Account created.',
+        description: "We've created your account for BlueApple.",
+        status: 'success',
+        duration: 5000,
+        isClosable: true,
+      })
     } catch (err) {
       console.error(err);
       setLoader(false)
@@ -50,15 +59,11 @@ setLoader(true)
   };
 
 if(loader===true){
-    return <Progress size='xs' isIndeterminate />
+    return  <Image src="https://thumbs.gfycat.com/RipeLastIcefish-size_restricted.gif" m={"auto"} w="30%"/>
 }
   return (
     <>
-    {/* if(loader===true){
-    return <Progress size='xs' isIndeterminate />
-} */}
-
-{loader === true ? <Progress size='xs' isIndeterminate /> : console.log("loader false")}
+{loader === true ? <Image src="https://thumbs.gfycat.com/RipeLastIcefish-size_restricted.gif" /> :console.log("error")}
       <MetaData title={"Create Your BlueApple ID - BlueApple(IN)"} />
       <Box w={"100%"} borderBottom="1px solid gray">
         <Flex justifyContent={"space-evenly"} gap={10} alignItems="center">
