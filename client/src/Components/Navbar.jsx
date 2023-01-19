@@ -321,14 +321,14 @@ const Navbar = () => {
               >
                 <BiSearch size={20} />
               </Button>
-              <Button
+              <Link to="/register"><Button
                 _hover={{ bg: "#313132", color: "white" }}
                 color="white"
                 variant="ghost"
                 size="sm"
               >
                 <BsFillBagFill size={20} />
-              </Button>
+              </Button></Link>
             </HStack>
           </HStack>
         </Flex>
