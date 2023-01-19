@@ -4,7 +4,7 @@ import MetaData from "../Components/Home/MetaData";
 import styles from "../Styles/Ipad.module.css";
 import FirstBoxComponent from "../Components/Ipad/FirstBoxComponent";
 import FiveGridsComponent from "../Components/Ipad/FiveGridsComponent";
-import Grid1Ipad from "../Components/Ipad/Grid1Ipad";
+// import Grid1Ipad from "../Components/Ipad/Grid1Ipad";
 import ThreeDataComponent from "../Components/Ipad/ThreeDataComponent";
 import Grid2Ipad from "../Components/Ipad/Grid2Ipad";
 import Grid3Ipad from "../Components/Ipad/Grid3Ipad";
@@ -58,7 +58,7 @@ const Ipad = () => {
                   Supercharged 
                 </Text>
                 <Text color={"white"} fontSize={20} fontWeight="400" mb={"10px"}>
-                  From $499
+                From ₹81900.00*
                 </Text>
                 <Button colorScheme="blue">Buy</Button>
 
@@ -86,7 +86,7 @@ const Ipad = () => {
         </Box>
         <FiveGridsComponent/>
 
-        <Grid1Ipad />
+        {/* <Grid1Ipad /> */}
 
         <ThreeDataComponent/>
         

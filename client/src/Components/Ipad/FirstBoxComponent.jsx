@@ -37,10 +37,10 @@ const FirstBoxComponent = () => {
                   Magical.
                 </Text>
 
-                <Text color={"black"} fontSize={20} fontWeight="400">
-                  From $499
+                <Text color={"black"} fontSize={20} fontWeight="400" mt={"10px"}>
+                From ₹44900.00*
                 </Text>
-                <Button colorScheme="blue">Buy</Button>
+                <Button colorScheme="blue" mt={"10px"} mb={"10px"}>Buy</Button>
 
                 <Text
                   color={"#175590"}
