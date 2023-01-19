@@ -7,6 +7,7 @@ import Ipad from '../Pages/Ipad'
 import Iphone from '../Pages/Iphone'
 import Mac from '../Pages/Mac'
 import Store from '../Pages/Store'
+import Support from '../Pages/Support'
 import Watch from '../Pages/Watch'
 
 
@@ -24,6 +25,7 @@ const AllRoutes = () => {
         <Route path="*" element={<h1>Hello</h1>}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/login" element={<Login />}></Route>
+        <Route path="/support" element={<Support />}></Route>
     </Routes>
   )
 }
