@@ -24,7 +24,7 @@ const FirstBoxComponent = () => {
           pl={-500}
         //    border={"1px solid teal"} 
            >
-             <Text color={"red"} fontSize={15} fontWeight="bold">
+             <Text color={"#d78c5f"} fontSize={15} fontWeight="bold">
                   New
                 </Text>
                 <Text color={"black"} fontSize={50} fontWeight="bold">
@@ -40,12 +40,13 @@ const FirstBoxComponent = () => {
                 <Text color={"black"} fontSize={20} fontWeight="400" mt={"10px"}>
                 From ₹44900.00*
                 </Text>
-                <Button colorScheme="blue" mt={"10px"} mb={"10px"}>Buy</Button>
+                <Button colorScheme="blue" borderRadius={"30px"} mt={"10px"} mb={"10px"}>Buy</Button>
 
                 <Text
                   color={"#175590"}
                   fontWeight="bold"
                   fontSize={15}
+                
                   _hover={{ textDecoration: "underline" }}
                 >
                   Learn more &gt;

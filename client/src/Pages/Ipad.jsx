@@ -48,7 +48,7 @@ const Ipad = () => {
           <Box pt={0}>
             <Flex>
               <Stack w={"25%"} alignItems={"center"} marginTop={"250px"} ml={"60px"}>
-                <Text color={"red"} fontSize={15} fontWeight="bold" >
+                <Text color={"#d78c5f"} fontSize={15} fontWeight="bold" >
                   New
                 </Text>
                 <Text color={"white"} fontSize={50} fontWeight="bold">
@@ -60,7 +60,7 @@ const Ipad = () => {
                 <Text color={"white"} fontSize={20} fontWeight="400" mb={"10px"}>
                 From ₹81900.00*
                 </Text>
-                <Button colorScheme="blue">Buy</Button>
+                <Button colorScheme="blue"  borderRadius={"30px"}>Buy</Button>
 
                 <Text
                   color={"#175590"}
