@@ -48,7 +48,7 @@ const GridBigIpad = () => {
               </Text>
             </Flex>
 
-            {/* NOTE : SCROOL TO BE ADDED BY CHANGING PHOTO */}
+            {/* NOTE : SCROLL TO BE ADDED BY CHANGING PHOTO */}
             <Box
               className={styles.ipad_iFitness}
               // border={"1px solid red"}
