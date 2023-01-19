@@ -1,8 +1,11 @@
-import { Box, Flex, Text, Image, Stack, Button } from "@chakra-ui/react";
+import { Box, Flex, Text,  Stack, Button } from "@chakra-ui/react";
 import React from "react";
 import MetaData from "../Components/Home/MetaData";
 import styles from "../Styles/Ipad.module.css";
+import FirstBoxComponent from "../Components/Ipad/FirstBoxComponent";
+import FiveGridsComponent from "../Components/Ipad/FiveGridsComponent";
 import Grid1Ipad from "../Components/Ipad/Grid1Ipad";
+import ThreeDataComponent from "../Components/Ipad/ThreeDataComponent";
 import Grid2Ipad from "../Components/Ipad/Grid2Ipad";
 import Grid3Ipad from "../Components/Ipad/Grid3Ipad";
 import GridBigIpad from "../Components/Ipad/GridBigIpad";
@@ -16,12 +19,13 @@ import allData from "../Components/Home/allData";
 const Ipad = () => {
   return (
     <>
-      <MetaData title={"iPad-Apple"} />
+      <MetaData title={"iPad-Apple (IN)"} />
       <Box>
         <TopDrawer data={allData.topDrawer.ipad} />
       </Box>
 
       <Box w={"100%"} backgroundColor={"#f5f5f7"}>
+
         <Box
           w={"100%"}
           display={"flex"}
@@ -35,62 +39,25 @@ const Ipad = () => {
         </Box>
 
         {/* first box */}
-        <Box w={"100%"} className={styles.ipad_one} border={"1px solid red"}>
-          <Box pt={5} border={"1px solid pink"}>
-            <Flex margin={"auto"}>
-              <Image
-                src="https://www.apple.com/v/ipad-10.9/b/images/overview/hero/hero__ecv967jz1y82_large.jpg"
-                alt="image"
-                height={"600px"}
-              />
-              <Stack
-                w={"25%"}
-                alignItems={"center"}
-                border={"1px solid teal"}
-                marginTop={"100px"}
-              >
-                <Text color={"red"} fontSize={15} fontWeight="bold">
-                  New
-                </Text>
-                <Text color={"black"} fontSize={50} fontWeight="bold">
-                  iPad
-                </Text>
-                <Text color={"black"} fontSize={28} fontWeight="bold">
-                  Lovable. Drawable. Magical.
-                </Text>
-                <Text color={"black"} fontSize={20} fontWeight="400">
-                  From $499
-                </Text>
-                <Button colorScheme="blue">Buy</Button>
 
-                <Text
-                  color={"#175590"}
-                  fontWeight="bold"
-                  fontSize={15}
-                  _hover={{ textDecoration: "underline" }}
-                >
-                  Learn more &gt;
-                </Text>
-              </Stack>
-            </Flex>
-          </Box>
-        </Box>
+        <FirstBoxComponent/>
+        
 
         {/* two box */}
-        <Box w={"100%"}>
-          <Box pt={5}>
+        <Box w={"100%"} backgroundColor={"black"}>
+          <Box pt={0}>
             <Flex>
-              <Stack w={"25%"} alignItems={"center"}>
-                <Text color={"red"} fontSize={15} fontWeight="bold">
+              <Stack w={"25%"} alignItems={"center"} marginTop={"250px"} ml={"60px"}>
+                <Text color={"red"} fontSize={15} fontWeight="bold" >
                   New
                 </Text>
-                <Text color={"black"} fontSize={50} fontWeight="bold">
+                <Text color={"white"} fontSize={50} fontWeight="bold">
                   iPad Pro
                 </Text>
-                <Text color={"black"} fontSize={28} fontWeight="bold">
-                  Supercharged
+                <Text color={"white"} fontSize={28} fontWeight="bold" mb={"10px"} mt={"10px"}>
+                  Supercharged 
                 </Text>
-                <Text color={"black"} fontSize={20} fontWeight="400">
+                <Text color={"white"} fontSize={20} fontWeight="400" mb={"10px"}>
                   From $499
                 </Text>
                 <Button colorScheme="blue">Buy</Button>
@@ -99,22 +66,29 @@ const Ipad = () => {
                   color={"#175590"}
                   fontWeight="bold"
                   fontSize={15}
+                  mb={"10px"}
                   _hover={{ textDecoration: "underline" }}
                 >
                   Learn more &gt;
                 </Text>
               </Stack>
 
-              <Image
-                src="https://www.apple.com/v/ipad/home/cd/images/overview/hero/ipad_pro_hero__bh3eq6sqfjw2_large.jpg"
-                alt="image"
-                height={"600px"}
-              />
+             
+              <Box className = {styles.ipad_iSecondBox}
+              width={950}
+              height={750}
+              // border={"1px solid red"}
+              >
+                
+              </Box>
             </Flex>
           </Box>
         </Box>
+        <FiveGridsComponent/>
 
         <Grid1Ipad />
+
+        <ThreeDataComponent/>
         
         <Grid2Ipad/>
 
