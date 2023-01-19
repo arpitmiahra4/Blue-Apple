@@ -82,8 +82,63 @@ const allData = {
           ],
           iphone:[
             {
-              img: "",
-              title: "",
+              img: "https://www.apple.com/v/iphone/home/bk/images/chapternav/iphone_14_pro_light__dfhcc00ur2oi_large.svg",
+              title: "iPhone 14 Pro",
+              link: "/",
+            },
+            {
+              img: "https://www.apple.com/v/iphone/home/bk/images/chapternav/iphone_14_pro_light__dfhcc00ur2oi_large.svg",
+              title: "iPhone 14",
+              link: "/",
+            },
+            {
+              img: "https://www.apple.com/v/iphone/home/bk/images/chapternav/iphone_14_pro_light__dfhcc00ur2oi_large.svg",
+              title: "iPhone 13",
+              link: "/",
+            },
+            {
+              img: "https://www.apple.com/v/iphone/home/bk/images/chapternav/iphone_se_light__fhg8duy6ffau_large.svg",
+              title: "iPhone SE",
+              link: "/",
+            },
+            {
+              img: "https://www.apple.com/v/iphone/home/bk/images/chapternav/iphone_12_light__cxh2ll1zwpw2_large.svg",
+              title: "iPhone 12",
+              link: "/",
+            },
+            {
+              img: "https://www.apple.com/v/iphone/home/bk/images/chapternav/iphone_compare_light__f4jj7brpbvm2_large.svg",
+              title: "Compare",
+              link: "/",
+            },
+            {
+              img: "https://www.apple.com/v/iphone/home/bk/images/chapternav/airpods_light__8oj157p2476a_large.svg",
+              title: "AirPods",
+              link: "/",
+            },
+            {
+              img: "https://www.apple.com/v/iphone/home/bk/images/chapternav/airtag_light__cb2bmnv6aoeu_large.svg",
+              title: "AirTags",
+              link: "/",
+            },
+            {
+              img: "https://www.apple.com/v/iphone/home/bk/images/chapternav/accessories_light__ed5l6ipsevqu_large.svg",
+              title: "Accessories",
+              link: "/",
+            },
+            {
+              img: "https://www.apple.com/v/iphone/home/bk/images/chapternav/iphone_apple_card_light__dtut839e76c2_large.svg",
+              title: "Apple Card",
+              link: "/",
+            },
+            {
+              img: "https://www.apple.com/v/iphone/home/bk/images/chapternav/iphone_ios_light__b8s4ws8o77iq_large.svg",
+              title: "IOS 16",
+              link: "/",
+            },
+            {
+              img: "https://www.apple.com/v/iphone/home/bk/images/chapternav/shop_iphone_light__b2toggskllle_large.svg",
+              title: "Shop iPhone",
               link: "/",
             },
           ],

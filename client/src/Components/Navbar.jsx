@@ -182,7 +182,7 @@ const Navbar = () => {
                 >
                   Accessories
                 </Button>
-                <Button
+                <Link to="/support"><Button
                 _hover={{ bg: "#313132", color: "white" }}
                   fontWeight="normal"
                   fontSize={18}
@@ -190,7 +190,7 @@ const Navbar = () => {
                   variant="ghost"
                 >
                   Support
-                </Button>
+                </Button></Link>
               </VStack>
             </Box>
 
@@ -304,7 +304,7 @@ const Navbar = () => {
               >
                Accessories
               </Button></Link>
-              <Link to="/"><Button
+              <Link to="/support"><Button
                 _hover={{ bg: "#313132", color: "white" }}
                 fontWeight="normal"
                 fontSize={13}
