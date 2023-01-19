@@ -241,3 +241,66 @@
     grid-template-columns: repeat(2,1fr);
     gap: 30px;
 }
+
+@media (max-width: 734px){
+    .ipad_b3Grid{
+        margin-top: 20px;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        width:100%;
+        margin-left: 0%;
+    } 
+    .ipad_bigGrid{
+        margin-top: 20px;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        width:100%;
+        margin-left: 0%;
+    }
+    
+    
+    .ipad_fiveGrid{
+        margin-top: 20px;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        width:100%
+        
+    }
+    .ipad_bgrid{
+        margin-top: 20px;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+    .ipad_os16{
+        background-image: url("https://www.apple.com/in/ipad/home/images/overview/ipados16__9t47xpd66wiq_small.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 720px 488px;
+        min-height: 488px;
+        z-index: 1;
+        /* background-size: cover; */
+        cursor: pointer;
+    }
+   
+    .ipad_acc{
+        background-image: url("  https://www.apple.com/v/ipad/home/cc/images/overview/accessories__gdpezee1naai_small.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 532px 259px;
+        min-height: 259px;
+        z-index: 1;
+        /* background-size: cover; */
+        cursor: pointer;
+    }
+    .ipad_WhyIpad{
+        background-image: url("https://www.apple.com/v/ipad/home/cc/images/overview/why_ipad__fyckwbl8w5u2_small.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 387px 260px;
+        min-height: 260px;
+        z-index: 1;
+        /* background-size: cover; */
+        cursor: pointer;
+    }
+    
+} 
