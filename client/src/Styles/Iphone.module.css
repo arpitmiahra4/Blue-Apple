@@ -137,6 +137,7 @@
     width: 90%;
     margin: auto;
     margin-top: 20px;
+    padding-top: 40px;
 }
 
 .alok_ten2{
@@ -208,3 +209,28 @@
     margin-top: 40px;
 }
 
+@media all and (min-width: 481px) and (max-width: 768px){
+    .alok_nine2{
+        margin-top: 50px;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 480px){
+    .alok_seven{
+        grid-template-columns: repeat(2,1fr);
+       margin-top: 50px;
+       width: 75%;
+       margin-left: 12%;
+       
+    }
+
+    .alok_six{
+        gap: 120px;
+        margin: auto;
+        justify-content: center;
+        margin-top: 3px;
+        margin-left: -5%;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
