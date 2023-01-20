@@ -31,11 +31,25 @@ const Ipad = () => {
           display={"flex"}
           alignItems="center"
           justifyContent={"center"}
-          h={"50px"}
-          color={"white"}
-          backgroundColor={"#cc0001"}
+          h={"40px"}
+          color={"gray"}
+         
+          fontSize={"12px"}
+          // backgroundColor={"#cc0001"}
         >
-          Find gifts to jumpstart their Lunar New Year. Shop the gift guide &gt;
+          Get up to ₹5000 instant savings on selected iPad models with HDFC Bank credit cards.‡ Plus No Cost EMI from most leading banks.‡‡ 
+          <Text
+                  color={"#067bff"}
+                ml={2}
+                  
+                  fontSize={12}
+                
+                  _hover={{ textDecoration: "underline" }}
+
+                >
+                  Shop iPad &gt;
+                </Text>
+          
         </Box>
 
         {/* first box */}
