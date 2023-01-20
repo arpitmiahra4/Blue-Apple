@@ -1,4 +1,4 @@
-import { Box, Flex, Text,  Stack, Button } from "@chakra-ui/react";
+import { Box, Flex, Text, Stack, Button } from "@chakra-ui/react";
 import React from "react";
 import MetaData from "../Components/Home/MetaData";
 import styles from "../Styles/Ipad.module.css";
@@ -25,7 +25,6 @@ const Ipad = () => {
       </Box>
 
       <Box w={"100%"} backgroundColor={"#f5f5f7"}>
-
         <Box
           w={"100%"}
           display={"flex"}
@@ -33,48 +32,61 @@ const Ipad = () => {
           justifyContent={"center"}
           h={"40px"}
           color={"gray"}
-         
           fontSize={"12px"}
           // backgroundColor={"#cc0001"}
         >
-          Get up to ₹5000 instant savings on selected iPad models with HDFC Bank credit cards.‡ Plus No Cost EMI from most leading banks.‡‡ 
+          Get up to ₹5000 instant savings on selected iPad models with HDFC Bank
+          credit cards.‡ Plus No Cost EMI from most leading banks.‡‡
           <Text
-                  color={"#067bff"}
-                ml={2}
-                  
-                  fontSize={12}
-                
-                  _hover={{ textDecoration: "underline" }}
-
-                >
-                  Shop iPad &gt;
-                </Text>
-          
+            color={"#067bff"}
+            ml={2}
+            fontSize={12}
+            _hover={{ textDecoration: "underline" }}
+          >
+            Shop iPad &gt;
+          </Text>
         </Box>
 
         {/* first box */}
 
-        <FirstBoxComponent/>
-        
+        <FirstBoxComponent />
 
         {/* two box */}
         <Box w={"100%"} backgroundColor={"black"}>
           <Box pt={0}>
             <Flex>
-              <Stack w={"25%"} alignItems={"center"} marginTop={"250px"} ml={"60px"}>
-                <Text color={"#d78c5f"} fontSize={15} fontWeight="bold" >
+              <Stack
+                w={"25%"}
+                alignItems={"center"}
+                marginTop={"250px"}
+                ml={"60px"}
+              >
+                <Text color={"#d78c5f"} fontSize={15} fontWeight="bold">
                   New
                 </Text>
                 <Text color={"white"} fontSize={50} fontWeight="bold">
                   iPad Pro
                 </Text>
-                <Text color={"white"} fontSize={28} fontWeight="bold" mb={"10px"} mt={"10px"}>
-                  Supercharged 
+                <Text
+                  color={"white"}
+                  fontSize={28}
+                  fontWeight="bold"
+                  mb={"10px"}
+                  mt={"10px"}
+                >
+                  Supercharged
                 </Text>
-                <Text color={"white"} fontSize={20} fontWeight="400" mb={"10px"}>
-                From ₹81900.00*
+                <Text
+                  color={"white"}
+                  fontSize={20}
+                  fontWeight="400"
+                  mb={"10px"}
+                >
+                  From ₹81900.00*
                 </Text>
-                <Button colorScheme="blue"  borderRadius={"30px"}>Buy</Button>
+                <Button colorScheme="blue" borderRadius={"30px"}>
+                  Buy
+                </Button>
 
                 <Text
                   color={"#175590"}
@@ -87,31 +99,31 @@ const Ipad = () => {
                 </Text>
               </Stack>
 
-             
-              <Box className = {styles.ipad_iSecondBox}
-              width={950}
-              height={750}
-              // border={"1px solid red"}
-              >
-                
-              </Box>
+              <Box
+                className={styles.ipad_iSecondBox}
+                width={950}
+                height={750}
+                // border={"1px solid red"}
+              ></Box>
             </Flex>
           </Box>
         </Box>
-        <FiveGridsComponent/>
+        <FiveGridsComponent />
 
         {/* <Grid1Ipad /> */}
 
-        <ThreeDataComponent/>
-        
-        <Grid2Ipad/>
+        <ThreeDataComponent />
+
+        <Grid2Ipad />
 
         {/* accessories box */}
-        <Box w={"96%"} 
-        // border={"1px solid teal"}
-        backgroundColor={"white"}
-        mt={"30px"}
-         ml={"2%"}>
+        <Box
+          w={"96%"}
+          // border={"1px solid teal"}
+          backgroundColor={"white"}
+          mt={"30px"}
+          ml={"2%"}
+        >
           <Box pt={10}>
             <Text color={"black"} fontSize={35} fontWeight="bold">
               Accessories
@@ -132,13 +144,12 @@ const Ipad = () => {
             >
               Shop iPad accessories &gt;
             </Text>
-            <Box className={styles.ipad_acc} 
-            // border={"1px solid red"}
+            <Box
+              className={styles.ipad_acc}
+              // border={"1px solid red"}
             ></Box>
           </Box>
         </Box>
-
-        
 
         <Text
           mt={"110px"}
@@ -150,7 +161,7 @@ const Ipad = () => {
           What makes an iPad an iPad?
         </Text>
 
-        <WhyIpadComponent/>
+        <WhyIpadComponent />
 
         {/* ipad OS16 box */}
         <Box
