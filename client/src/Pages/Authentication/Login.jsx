@@ -50,7 +50,7 @@ const Login = () => {
         duration: 5000,
         isClosable: true,
       });
-      window.location.replace("/");
+      window.location.replace("/admin");
     } else {
       toast({
         title: "Invalid User!",

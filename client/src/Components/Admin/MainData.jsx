@@ -6,7 +6,7 @@ import {
   SimpleGrid,
   Text,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import {
   barChartDataDashboard,
@@ -22,12 +22,27 @@ import Card from "../Card/Card";
 import CardBody from "../Card/CardBody";
 import IconBox from "../Icons/IconBox";
 import BarChart from "../chartjs/BarChart";
+import axios from "axios";
 const MainData = () => {
   const [orders, setOrders] = useState(0);
   const [sales, setSales] = useState(0);
   const [product, setProduct] = useState(0);
-  const [user, setuser] = useState(0);
+  const [user, setUser] = useState(0);
+  const fetchData = async () => {
+    try {
+      const res = await axios.get(
+        "https://mock-server-686g.onrender.com/blueRegister"
+      );
+      console.log(res.data);
+        setUser(res.data.length)
+    } catch (err) {
+      console.error(err.response);
+    }
+  };
 
+  useEffect(() => {
+    fetchData();
+  }, []);
   return (
     <>
       <MetaData title="Admin Dashboard" />
