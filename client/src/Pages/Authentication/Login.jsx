@@ -1,8 +1,8 @@
-import { Box, Button, Flex, Input, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Input, Text } from "@chakra-ui/react";
 import axios from "axios";
 import React from "react";
 import styles from "../../Styles/Store.module.css";
-import { AiFillLock, AiOutlineGoogle, AiOutlineUser } from "react-icons/ai";
+import { AiFillLock, AiOutlineUser } from "react-icons/ai";
 import { useToast } from "@chakra-ui/react";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -64,25 +64,18 @@ const Login = () => {
   return (
     <>
       <Box className={styles.log_main} py={5}>
+        <Text fontWeight={"bold"} fontSize={40} className={styles.text_log}>
+          Welcome To Blue Apple
+        </Text>
         <Flex borderRadius="10px" w="70%" m={"auto"}>
           <Box
-            w={"45%"}
+            w={"50%"}
             minH="600"
-            bgImage="https://cdn.wallpapersafari.com/95/10/Z7FCgJ.png"
-            bgSize={"cover"}
+            bgImage="https://i.ibb.co/yn0VsY4/apple-app-logo.png"
             bgRepeat="no-repeat"
             bgPosition={"center"}
             zIndex="1"
-          >
-            <Text
-              fontWeight={"bold"}
-              fontSize={35}
-              mt="20px"
-              className={styles.text_log}
-            >
-              Welcome To Blue Apple
-            </Text>
-          </Box>
+          ></Box>
           <Box
             w={"55%"}
             minH="600"
@@ -95,67 +88,82 @@ const Login = () => {
                 textAlign="left"
                 className={styles.text_login}
                 fontWeight="bold"
-                color={"white"}
+                color={"black"}
               >
                 Login Here !
               </Text>
               <Box>
                 <Flex alignItems={"center"} gap="2%" pl={5} py={5}>
-                  <AiOutlineUser size={40} color="white" />
+                  <AiOutlineUser size={40} color="black" />
                   <Input
                     w={"80%"}
                     borderRadius={20}
-                    border="2px solid white"
+                    border="2px solid black"
                     textAlign={"center"}
                     fontSize={18}
                     fontWeight="400"
                     type="email"
                     placeholder="Email / BlueApple ID"
-                    color={"whiteAlpha.600"}
+                    color={"black"}
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </Flex>
                 <Flex alignItems={"center"} gap="2%" pl={5} py={5}>
-                  <AiFillLock size={40} color="white" />
+                  <AiFillLock size={40} color="black" />
                   <Input
                     w={"80%"}
                     borderRadius={20}
-                    border="2px solid white"
+                    border="2px solid black"
                     textAlign={"center"}
                     fontSize={18}
                     fontWeight="400"
                     type="password"
                     placeholder="Password / BlueApple Password"
-                    color={"whiteAlpha.600"}
+                    color={"black"}
                     onChange={(e) => setPassword(e.target.value)}
                   />
                 </Flex>
                 <Button
-                  bg={"black"}
+                  bg={"#313132"}
                   color="white"
-                  _hover={{ color: "black", bg: "white" }}
+                  _hover={{
+                    color: "teal",
+                    bg: "#313132",
+                    border: "2px solid #7ac6eb",
+                  }}
                   w={"40%"}
-                  border="2px solid white"
+                  h="50px"
+                  border="2px solid Black"
                   fontSize={25}
-                  fontWeight="400"
+                  fontWeight="semibold"
                   onClick={handleLogin}
                 >
                   Login
                 </Button>
                 <br />
-                <Button
-                  bg={"black"}
-                  color="white"
-                  _hover={{ color: "black", bg: "white" }}
-                  w={"80%"}
-                  border="2px solid white"
-                  fontSize={25}
-                  fontWeight="400"
-                  mt={5}
-                >
-                  <AiOutlineGoogle size={25} color="#f9ae72" /> continue with
-                  Google
-                </Button>
+                <Flex alignItems={"center"} mt="1%" gap={2}>
+                  <Image
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/768px-Google_%22G%22_Logo.svg.png"
+                    w={"60px"}
+                    h="40px"
+                  />
+                  <Button
+                    bg={"#313132"}
+                    color="White"
+                    _hover={{
+                      color: "teal",
+                      bg: "#313132",
+                      border: "2px solid #7ac6eb",
+                    }}
+                    w={"80%"}
+                    h="50px"
+                    border="2px solid Black"
+                    fontSize={25}
+                    fontWeight="semibold"
+                  >
+                    continue with Google
+                  </Button>
+                </Flex>
               </Box>
             </Box>
           </Box>
