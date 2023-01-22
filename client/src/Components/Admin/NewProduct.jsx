@@ -95,13 +95,13 @@ setLoader(true)
             </Box>
             <Box border={"2px solid #f8e68a"} borderRadius={20} pl={5} pr={5} m="auto" w="60%" py={5} h={"82vh"} textAlign="left">
               <Text fontSize={22} fontWeight="semibold" mt={5} color="#f8e68a">Product Head</Text>
-              <Input fontSize={20} placeholder="Plese Add It's Mandatory" mt={2} h={50} onChange={(e)=>setHead(e.target.value)}/>
+              <Input  color="#f8e68a" fontSize={20} placeholder="Plese Add It's Mandatory" mt={2} h={50} onChange={(e)=>setHead(e.target.value)}/>
               <Text fontSize={22} fontWeight="semibold" mt={5} color="#f8e68a">Product Title</Text>
-              <Input fontSize={20} placeholder="Plese Add It's Mandatory" mt={2} h={50} onChange={(e)=>setTitle(e.target.value)}/>
+              <Input  color="#f8e68a" fontSize={20} placeholder="Plese Add It's Mandatory" mt={2} h={50} onChange={(e)=>setTitle(e.target.value)}/>
               <Text fontSize={22} fontWeight="semibold" mt={5} color="#f8e68a">Product Price</Text>
-              <Input fontSize={20} placeholder="Plese Add It's Mandatory" mt={2} h={50} onChange={(e)=>setprice(e.target.value)}/>
+              <Input  color="#f8e68a" fontSize={20} placeholder="Plese Add It's Mandatory" mt={2} h={50} onChange={(e)=>setprice(e.target.value)}/>
               <Text fontSize={22} fontWeight="semibold" mt={5} color="#f8e68a">Product Started Price</Text>
-              <Input fontSize={20} placeholder="Plese Add It's Mandatory" mt={2} h={50} onChange={(e)=>setStarted(e.target.value)}/>
+              <Input color="#f8e68a"  fontSize={20} placeholder="Plese Add It's Mandatory" mt={2} h={50} onChange={(e)=>setStarted(e.target.value)}/>
               <Flex w={"100%"} justifyContent={"center"} mt={10}>
               <Button  border={"2px solid #f8e68a"} fontSize={22} fontWeight="bold" h={50} color="#f8e68a" _hover={{bg:"gray"}} bg="black" onClick={handleSubmit}>Add Product</Button>
               </Flex>
