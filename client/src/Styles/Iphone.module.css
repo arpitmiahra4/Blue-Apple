@@ -70,6 +70,7 @@
 
 .alok_six{
     gap: 120px;
+    display: flex;
     margin: auto;
     justify-content: center;
     margin-top: 3px;

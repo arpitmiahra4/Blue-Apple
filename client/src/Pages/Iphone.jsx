@@ -118,7 +118,7 @@ const Iphone = () => {
 
   {/* six box */}
 
-  <Grid className={styles.alok_six}>
+  <Flex className={styles.alok_six}>
     <Box  >
     <Text  color={"black"} fontFamily={"sans-serif"} mt={2} fontSize={17}>6.7″ or 6.1″</Text>
     <Text mt={3} color={"#1D1D1F"} fontFamily={"sans-serif"}  fontSize={14}>Super Retina XDR display2
@@ -140,7 +140,7 @@ const Iphone = () => {
     <Text mt={3} color={"#1D1D1F"} fontFamily={"sans-serif"}  fontSize={14}>Retina HD display
     <br></br>-<br></br>-</Text>
     </Box>
-  </Grid>
+  </Flex>
 
   {/* box seven */}
 
