@@ -40,7 +40,7 @@ setLoader(true)
       setLoader(false)
       toast({
         title: title +" added",
-        description: title =" product added to your databse",
+        description: title +" product added to your databse",
         status: 'success',
         duration: 5000,
         isClosable: true,
