@@ -10,9 +10,16 @@ import {
   CloseButton,
   Button,
   Image,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuOptionGroup,
+  MenuItemOption,
+  MenuGroup,
+  MenuItem,
 } from "@chakra-ui/react";
 import React from "react";
-import { BiSearch } from "react-icons/bi";
+import { BsPersonFill } from "react-icons/bs";
 import { BsFillBagFill } from "react-icons/bs";
 import { FcMenu } from "react-icons/fc";
 import { Link } from "react-router-dom";
@@ -62,14 +69,21 @@ const Navbar = () => {
                 icon={<FcMenu size={50} />}
                 onClick={mobileNav.onOpen}
               />
-              
-                <Flex margin={"auto"} justifyContent="center" w={"100%"} alignItems="center">
-                <Link to="/"><Image
+
+              <Flex
+                margin={"auto"}
+                justifyContent="center"
+                w={"100%"}
+                alignItems="center"
+              >
+                <Link to="/">
+                  <Image
                     src="https://www.freeiconspng.com/thumbs/apple-logo-icon/blue-apple-logo-icon-0.png"
                     w={"40px"}
                     m="auto"
-                  /></Link>
-                </Flex>
+                  />
+                </Link>
+              </Flex>
               <VStack
                 pos="absolute"
                 top={0}
@@ -111,15 +125,17 @@ const Navbar = () => {
                     Mac
                   </Button>
                 </Link>
-                <Link to="/ipad"><Button
-                  fontWeight="normal"
-                  fontSize={18}
-                  _hover={{ bg: "#313132", color: "white" }}
-                  w="full"
-                  variant="ghost"
-                >
-                  iPad
-                </Button></Link>
+                <Link to="/ipad">
+                  <Button
+                    fontWeight="normal"
+                    fontSize={18}
+                    _hover={{ bg: "#313132", color: "white" }}
+                    w="full"
+                    variant="ghost"
+                  >
+                    iPad
+                  </Button>
+                </Link>
                 <Link to="/iphone">
                   <Button
                     fontWeight="normal"
@@ -164,15 +180,17 @@ const Navbar = () => {
                     Tv & Home
                   </Button>
                 </Link>
-                <Link to="/"><Button
-                  fontWeight="normal"
-                  fontSize={18}
-                  w="full"
-                  variant="ghost"
-                  _hover={{ bg: "#313132", color: "white" }}
-                >
-                  Only On Apple
-                </Button></Link>
+                <Link to="/">
+                  <Button
+                    fontWeight="normal"
+                    fontSize={18}
+                    w="full"
+                    variant="ghost"
+                    _hover={{ bg: "#313132", color: "white" }}
+                  >
+                    Only On Apple
+                  </Button>
+                </Link>
                 <Button
                   fontWeight="normal"
                   fontSize={18}
@@ -182,15 +200,17 @@ const Navbar = () => {
                 >
                   Accessories
                 </Button>
-                <Link to="/support"><Button
-                _hover={{ bg: "#313132", color: "white" }}
-                  fontWeight="normal"
-                  fontSize={18}
-                  w="full"
-                  variant="ghost"
-                >
-                  Support
-                </Button></Link>
+                <Link to="/support">
+                  <Button
+                    _hover={{ bg: "#313132", color: "white" }}
+                    fontWeight="normal"
+                    fontSize={18}
+                    w="full"
+                    variant="ghost"
+                  >
+                    Support
+                  </Button>
+                </Link>
               </VStack>
             </Box>
 
@@ -286,49 +306,59 @@ const Navbar = () => {
                   Tv & Home
                 </Button>
               </Link>
-              <Link to="/"><Button
+              <Link to="/">
+                <Button
+                  _hover={{ bg: "#313132", color: "white" }}
+                  fontWeight="normal"
+                  fontSize={13}
+                  variant="ghost"
+                  size="sm"
+                >
+                  Only On Apple
+                </Button>
+              </Link>
+              <Link to="/">
+                <Button
+                  _hover={{ bg: "#313132", color: "white" }}
+                  fontWeight="normal"
+                  fontSize={13}
+                  variant="ghost"
+                  size="sm"
+                >
+                  Accessories
+                </Button>
+              </Link>
+              <Link to="/support">
+                <Button
+                  _hover={{ bg: "#313132", color: "white" }}
+                  fontWeight="normal"
+                  fontSize={13}
+                  variant="ghost"
+                  size="sm"
+                >
+                  Support
+                </Button>
+              </Link>
+              <Menu closeOnSelect={true}>
+                <MenuButton as={Box} size={22} color="white" bg={"#313132"}>
+                  <BsPersonFill size={20} />
+                </MenuButton>
+                <MenuList bg={"#313132"}>
+                  <MenuGroup fontSize={20} title="Profile" bg={"#313132"}>
+                  <Link to="/login"><MenuItem bg={"#313132"}>Login</MenuItem></Link>
+                  <Link to="/register"><MenuItem bg={"#313132"}>Register</MenuItem></Link>
+                  <Link to="/admin"><MenuItem bg={"#313132"}>BlueApple DashBoard</MenuItem></Link>
+                  </MenuGroup>
+                </MenuList>
+              </Menu>
+              <Button
                 _hover={{ bg: "#313132", color: "white" }}
-                fontWeight="normal"
-                fontSize={13}
-                variant="ghost"
-                size="sm"
-              >
-                Only On Apple
-              </Button></Link>
-              <Link to="/"><Button
-                _hover={{ bg: "#313132", color: "white" }}
-                fontWeight="normal"
-                fontSize={13}
-                variant="ghost"
-                size="sm"
-              >
-               Accessories
-              </Button></Link>
-              <Link to="/support"><Button
-                _hover={{ bg: "#313132", color: "white" }}
-                fontWeight="normal"
-                fontSize={13}
-                variant="ghost"
-                size="sm"
-              >
-               Support
-              </Button></Link>
-              <Link to="/login"><Button
-                _hover={{ bg: "#313132", color: "white" }}
-                variant="ghost"
                 color="white"
-                size="sm"
-              >
-                <BiSearch size={20} />
-              </Button></Link>
-              <Link to="/register"><Button
-                _hover={{ bg: "#313132", color: "white" }}
-                color="white"
                 variant="ghost"
                 size="sm"
               >
-                <BsFillBagFill size={20} />
-              </Button></Link>
+                <BsFillBagFill size={18} />
+              </Button>
             </HStack>
           </HStack>
         </Flex>

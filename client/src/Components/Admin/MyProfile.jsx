@@ -7,8 +7,11 @@ import {
   BsFillEnvelopeFill,
   BsApple,
 } from "react-icons/bs";
+import MetaData from "../Home/MetaData";
 const MyProfile = () => {
   return (
+    <>
+    <MetaData title="Admin MyProfile" />
     <Box w={"100%"} py={"1%"} pl="1%" pr="1%" bg={"white"}>
       <Flex gap={"1%"}>
         <Box
@@ -51,9 +54,9 @@ const MyProfile = () => {
               />
 
               <Flex alignItems="center" px={6} py={3} bg="gray.900">
-                <Icon as={BsApple} h={6} w={6} color="white" />
+                <Icon as={BsApple} h={6} w={6} color="#f8e68a" />
 
-                <chakra.h1 mx={3} color="white" fontWeight="bold" fontSize="lg">
+                <chakra.h1 mx={3} color="#f8e68a" fontWeight="bold" fontSize="lg">
                   BlueApple
                 </chakra.h1>
               </Flex>
@@ -62,7 +65,7 @@ const MyProfile = () => {
                 <chakra.h1
                   fontSize="xl"
                   fontWeight="bold"
-                  color="white"
+                  color="#f8e68a"
                   _dark={{
                     color: "white",
                   }}
@@ -70,7 +73,7 @@ const MyProfile = () => {
                   Arpit Mishra
                 </chakra.h1>
                 <chakra.p
-                  color="white"
+                  color="#f8e68a"
                   _dark={{
                     color: "white",
                   }}
@@ -82,7 +85,7 @@ const MyProfile = () => {
                 <Flex
                   alignItems="center"
                   mt={4}
-                  color="white"
+                  color="#f8e68a"
                   _dark={{
                     color: "gray.200",
                   }}
@@ -97,7 +100,7 @@ const MyProfile = () => {
                 <Flex
                   alignItems="center"
                   mt={4}
-                  color="white"
+                  color="#f8e68a"
                   _dark={{
                     color: "gray.200",
                   }}
@@ -111,7 +114,7 @@ const MyProfile = () => {
                 <Flex
                   alignItems="center"
                   mt={4}
-                  color="white"
+                  color="#f8e68a"
                   _dark={{
                     color: "gray.200",
                   }}
@@ -129,6 +132,7 @@ const MyProfile = () => {
         </Box>
       </Flex>
     </Box>
+    </>
   );
 };
 

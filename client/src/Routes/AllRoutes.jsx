@@ -13,6 +13,7 @@ import Home from "../Pages/Home";
 import Ipad from "../Pages/Ipad";
 import Iphone from "../Pages/Iphone";
 import Mac from "../Pages/Mac";
+import SingleProduct from "../Pages/product/SingleProduct";
 import Store from "../Pages/Store";
 import Support from "../Pages/Support";
 import Watch from "../Pages/Watch";
@@ -38,6 +39,7 @@ const AllRoutes = () => {
       <Route path="/newProduct" element={<NewProduct />}></Route>
       <Route path="/myProfile" element={<MyProfile />}></Route>
       <Route path="/reviewsTable" element={<ReviewsTable />}></Route>
+      <Route path="/singleProduct" element={<SingleProduct />}></Route>
     </Routes>
   );
 };

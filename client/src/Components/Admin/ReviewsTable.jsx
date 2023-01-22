@@ -9,8 +9,11 @@ import { Table, Tbody, Text, Th, Thead, Tr } from "@chakra-ui/react";
 import TablesProjectRow from "./TablesProjectRow";
 import { tablesProjectData } from "./variables/general";
 import { AiFillCheckCircle } from "react-icons/ai";
+import MetaData from "../Home/MetaData";
 const ReviewsTable = () => {
   return (
+    <>
+    <MetaData title="Admin MyProfile" />
     <Box w={"100%"} py={"1%"} pl="1%" pr="1%" bg={"white"}>
       <Flex gap={"1%"}>
         <Box w={"20%"} h="90vh" bg={"black"} borderRadius={10}>
@@ -36,8 +39,8 @@ const ReviewsTable = () => {
                     h="15px"
                     me="5px"
                   />
-                  <Text fontSize="sm" color="gray.400" fontWeight="normal">
-                    <Text fontWeight="bold" as="span" color="gray.400">
+                  <Text fontSize="sm" color="#f8e68a" fontWeight="normal">
+                    <Text fontWeight="bold" as="span" color="#f8e68a">
                       +30%
                     </Text>{" "}
                     this month
@@ -51,34 +54,34 @@ const ReviewsTable = () => {
                   <Tr my=".8rem" ps="0px">
                     <Th
                       ps="0px"
-                      color="gray.400"
+                      color="#f8e68a"
                       fontFamily="Plus Jakarta Display"
                       borderBottomColor="#56577A"
                     >
                       User Name
                     </Th>
                     <Th
-                      color="gray.400"
+                      color="#f8e68a"
                       fontFamily="Plus Jakarta Display"
                       borderBottomColor="#56577A"
                     >
                       Comment
                     </Th>
                     <Th
-                      color="gray.400"
+                      color="#f8e68a"
                       fontFamily="Plus Jakarta Display"
                       borderBottomColor="#56577A"
                     >
                       Status
                     </Th>
                     <Th
-                      color="gray.400"
+                      color="#f8e68a"
                       fontFamily="Plus Jakarta Display"
                       borderBottomColor="#56577A"
                     >
                       Review
                     </Th>
-                    <Th borderBottomColor="#56577A">Ask</Th>
+                    <Th borderBottomColor="#56577A" color="#f8e68a">Ask</Th>
                   </Tr>
                 </Thead>
                 <Tbody>
@@ -101,6 +104,7 @@ const ReviewsTable = () => {
         </Box>
       </Flex>
     </Box>
+    </>
   );
 };
 

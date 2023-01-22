@@ -8,8 +8,11 @@ import CardBody from "../Card/CardBody";
 import { Table, Tbody, Text, Th, Thead, Tr } from "@chakra-ui/react";
 
 import OrderTableRow from "./OrderTableRow";
+import MetaData from "../Home/MetaData";
 const OrderTable = () => {
   return (
+    <>
+    <MetaData title="Admin OrderTable" />
     <Box w={"100%"} py={"1%"} pl="1%" pr="1%" bg={"white"}>
       <Flex gap={"1%"}>
         <Box
@@ -33,7 +36,7 @@ const OrderTable = () => {
             <CardHeader p="6px 0px 22px 0px">
               <Text
                 fontSize="22px"
-                color="#fff"
+                color="#f8e68a"
                 fontWeight="bold"
                 textDecoration={"underline"}
               >
@@ -41,39 +44,39 @@ const OrderTable = () => {
               </Text>
             </CardHeader>
             <CardBody>
-              <Table variant="simple" color="#fff">
+              <Table variant="simple" color="#f8e68a">
                 <Thead>
-                  <Tr my=".8rem" ps="0px" color="gray.400">
+                  <Tr my=".8rem" ps="0px" color="#f8e68a">
                     <Th
                       ps="0px"
-                      color="gray.400"
+                      color="#f8e68a"
                       fontFamily="Plus Jakarta Display"
                       borderBottomColor="#56577A"
                     >
                       ORDERS
                     </Th>
                     <Th
-                      color="gray.400"
+                      color="#f8e68a"
                       fontFamily="Plus Jakarta Display"
                       borderBottomColor="#56577A"
                     >
                       PAYMENT ID
                     </Th>
                     <Th
-                      color="gray.400"
+                      color="#f8e68a"
                       fontFamily="Plus Jakarta Display"
                       borderBottomColor="#56577A"
                     >
                       STAUS
                     </Th>
                     <Th
-                      color="gray.400"
+                      color="#f8e68a"
                       fontFamily="Plus Jakarta Display"
                       borderBottomColor="#56577A"
                     >
                       PRICE
                     </Th>
-                    <Th borderBottomColor="#56577A">DONE</Th>
+                    <Th borderBottomColor="#56577A" color={"#f8e68a"}>DONE</Th>
                   </Tr>
                 </Thead>
                 <Tbody>
@@ -93,6 +96,7 @@ const OrderTable = () => {
         </Box>
       </Flex>
     </Box>
+    </>
   );
 };
 

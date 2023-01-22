@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Text, useToast } from "@chakra-ui/react";
 import React from "react";
 import EqualizerIcon from "@mui/icons-material/Equalizer";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
@@ -46,13 +46,20 @@ const navMenu = [
     label: "My Profile",
     ref: "/myProfile",
   },
-  {
-    icon: <LogoutIcon />,
-    label: "Logout",
-  },
 ];
 
 const Sidebar = () => {
+  const toast = useToast()
+  const handleLogout =()=>{
+    toast({
+      title: "Logged Out successfully",
+      description: "Redirecting To The Home",
+      status: "success",
+      duration: 9000,
+      isClosable: true,
+    });
+    window.location.replace("/");
+  }
   return (
     <>
       <Box borderRadius={10}>
@@ -81,6 +88,7 @@ const Sidebar = () => {
                 </Link>
               </Box>
             ))}
+            <Button mt={5} fontSize={20} className={styles.admin_bar} color="#f8e68a" onClick={handleLogout} fontWeight={"bold"} bg={"black"} _hover={{bg:"teal" , color:"black"}}><LogoutIcon />Logout</Button>
         </Box>
       </Box>
     </>

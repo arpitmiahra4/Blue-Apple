@@ -8,9 +8,11 @@ import { Table, Tbody, Text, Th, Thead, Tr } from "@chakra-ui/react";
 import TablesTableRow from "./TablesTableRow";
 import { tablesTableData } from "./variables/general";
 import Sidebar from "./Sidebar/Sidebar";
+import MetaData from "../Home/MetaData";
 const UserTable = () => {
   return (
     <>
+    <MetaData title="Admin UserTable" />
       <Box w={"100%"} py={"1%"} pl="1%" pr="1%" bg={"white"}>
         <Flex gap={"1%"}>
           <Box
@@ -44,37 +46,37 @@ const UserTable = () => {
               <CardBody>
                 <Table variant="simple" color="#fff">
                   <Thead>
-                    <Tr my=".8rem" ps="0px" color="gray.400">
+                    <Tr my=".8rem" ps="0px" color="#f8e68a">
                       <Th
                         ps="0px"
-                        color="gray.400"
+                        color="#f8e68a"
                         fontFamily="Plus Jakarta Display"
                         borderBottomColor="#56577A"
                       >
                         Author
                       </Th>
                       <Th
-                        color="gray.400"
+                        color="#f8e68a"
                         fontFamily="Plus Jakarta Display"
                         borderBottomColor="#56577A"
                       >
                         Function
                       </Th>
                       <Th
-                        color="gray.400"
+                        color="#f8e68a"
                         fontFamily="Plus Jakarta Display"
                         borderBottomColor="#56577A"
                       >
                         Status
                       </Th>
                       <Th
-                        color="gray.400"
+                        color="#f8e68a"
                         fontFamily="Plus Jakarta Display"
                         borderBottomColor="#56577A"
                       >
                         D.O.B
                       </Th>
-                      <Th borderBottomColor="#56577A">Role</Th>
+                      <Th borderBottomColor="#56577A" color="#f8e68a">Role</Th>
                     </Tr>
                   </Thead>
                   <Tbody>

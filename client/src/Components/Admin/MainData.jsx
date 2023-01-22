@@ -89,21 +89,21 @@ const MainData = () => {
           <CardBody h={"full"}>
             <Flex alignItems={"center"} justifyContent="center" gap={"20%"}>
               <Box>
-                <Text fontSize="sm" color="gray.400" fontWeight="bold">
+                <Text fontSize="sm" color="#f8e68a" fontWeight="bold">
                   Welcome back,
                 </Text>
-                <Text fontSize="28px" color="#fff" fontWeight="bold" mb="18px">
+                <Text fontSize="28px" color="#f8e68a" fontWeight="bold" mb="18px">
                   Arpit Mishra
                 </Text>
               </Box>
-              <Text fontSize="md" color="gray.400" fontWeight="Bold">
+              <Text fontSize="md" color="#f8e68a" fontWeight="Bold">
                 "Glad to see you again! <br />
                 Ask me anything."
               </Text>
               <Button
                 bg="black"
-                color="white"
-                _hover={{ bg: "teal", color: "black" }}
+                color="#f8e68a"
+                _hover={{ bg: "teal", color: "#f8e68a" }}
               >
                 Tap To Record Login &gt;
               </Button>
@@ -117,7 +117,7 @@ const MainData = () => {
               <Card p="28px 0px 0px 0px" bg={"black"}>
                 <CardHeader mb="20px" ps="22px">
                   <Flex direction="column" alignSelf="flex-start">
-                    <Text fontSize="lg" color="#fff" fontWeight="bold" mb="6px">
+                    <Text fontSize="lg" color="#f8e68a" fontWeight="bold" mb="6px">
                       Sales Overview
                     </Text>
                     <Text fontSize="md" fontWeight="medium" color="gray.400">
@@ -163,7 +163,7 @@ const MainData = () => {
                     >
                       <Text
                         fontSize="lg"
-                        color="#fff"
+                        color="#f8e68a"
                         fontWeight="bold"
                         mb="6px"
                       >
@@ -188,13 +188,13 @@ const MainData = () => {
                           >
                             <WalletIcon h={"15px"} w={"15px"} color="#fff" />
                           </IconBox>
-                          <Text fontSize="sm" color="gray.400">
+                          <Text fontSize="sm" color="#f8e68a">
                             Users
                           </Text>
                         </Flex>
                         <Text
                           fontSize={{ sm: "md", lg: "lg" }}
-                          color="#fff"
+                          color="#f8e68a"
                           fontWeight="bold"
                           mb="6px"
                           my="6px"
@@ -220,13 +220,13 @@ const MainData = () => {
                           >
                             <RocketIcon h={"15px"} w={"15px"} color="#fff" />
                           </IconBox>
-                          <Text fontSize="sm" color="gray.400">
+                          <Text fontSize="sm" color="#f8e68a">
                             views
                           </Text>
                         </Flex>
                         <Text
                           fontSize={{ sm: "md", lg: "lg" }}
-                          color="#fff"
+                          color="#f8e68a"
                           fontWeight="bold"
                           mb="6px"
                           my="6px"
@@ -252,13 +252,13 @@ const MainData = () => {
                           >
                             <CartIcon h={"15px"} w={"15px"} color="#fff" />
                           </IconBox>
-                          <Text fontSize="sm" color="gray.400">
+                          <Text fontSize="sm" color="#f8e68a">
                             Sales
                           </Text>
                         </Flex>
                         <Text
                           fontSize={{ sm: "md", lg: "lg" }}
-                          color="#fff"
+                          color="#f8e68a"
                           fontWeight="bold"
                           mb="6px"
                           my="6px"
@@ -284,13 +284,13 @@ const MainData = () => {
                           >
                             <StatsIcon h={"15px"} w={"15px"} color="#fff" />
                           </IconBox>
-                          <Text fontSize="sm" color="gray.400">
+                          <Text fontSize="sm" color="#f8e68a">
                             Product
                           </Text>
                         </Flex>
                         <Text
                           fontSize={{ sm: "md", lg: "lg" }}
-                          color="#fff"
+                          color="#f8e68a"
                           fontWeight="bold"
                           mb="6px"
                           my="6px"
