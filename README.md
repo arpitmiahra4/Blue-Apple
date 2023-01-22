@@ -3,14 +3,14 @@ Full-Stack Apple with Admin Dashboard & Paytm Payment Gateway.
 
 Apple Inc. (formerly Apple Computer Inc.) is an American computer and consumer electronics company famous for creating the iPhone, iPad and Macintosh computers. Apple is one of the largest companies globally with a market cap of over 2 trillion dollars.
 
-[Visit Now](https://flipkartwebs.herokuapp.com/) 🚀
+[Visit Now]() 🚀
 
 ## 🖥️ Tech Stack
 **Frontend:**
 ![reactjs](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)&nbsp;
 ![react-router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)&nbsp;
 ![redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)&nbsp;
-![chakra](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)&nbsp;
+![chakra](https://img.shields.io/badge/Chakra%20UI-3bc7bd?style=for-the-badge&logo=chakraui&logoColor=white)&nbsp;
 ![mui](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white)&nbsp;
 ![chart-js](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white)&nbsp;
 
@@ -24,7 +24,7 @@ Apple Inc. (formerly Apple Computer Inc.) is an American computer and consumer e
 
 **Deployed On:**
 
-![vercel]()
+![vercel](https://vercel.com/)
 
 **Image Management:** [Cloudinary](https://cloudinary.com/)
 
@@ -58,10 +58,22 @@ Apple Inc. (formerly Apple Computer Inc.) is an American computer and consumer e
 
 <h2>📬 Contact</h2>
 
-If you want to contact us, you can reach us through below handles.
+If you want to contact Our Team, you can reach us through below handles.
 
+## Arpit Mishra
+[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arpit-mishra-662199222/)
 
-[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jigar-sable)
+## Vicky Kumar
+[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](/)
+
+## Shiv Kant Dubey
+[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](/)
+
+## Alok Verma
+[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alok-kumar-verma-2b4b43158/)
+
+## Noor Mohammed M
+[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/m-noor-mohammed-6130a4165/)
 
 © 2023 arpit-mishra
 
