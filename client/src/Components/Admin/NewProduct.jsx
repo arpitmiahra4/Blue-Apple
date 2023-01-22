@@ -36,7 +36,7 @@ const [img6, setImg6] = useState("");
   console.log(newProduct);
 setLoader(true)
     try {
-      await axios.post("", newProduct);
+      await axios.post("https://mock-server-686g.onrender.com/products", newProduct);
       setLoader(false)
       toast({
         title: title +" added",
