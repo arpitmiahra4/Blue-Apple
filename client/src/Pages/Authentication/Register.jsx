@@ -25,45 +25,58 @@ const Register = () => {
   const [confirm_password, setConfirm_password] = useState("");
   const [phoneCountry, setPhoneCountry] = useState("+91");
   const [phoneNumber, setPhoneNumber] = useState("");
-  const [loader, setLoader]=useState(false);
-  const toast = useToast()
+  const [loader, setLoader] = useState(false);
+  const toast = useToast();
 
-let userData = {
-  first_name,
-  last_name,
-  country,
-  dob,
-  email,
-  password,
-  confirm_password,
-  phoneCountry,
-  phoneNumber
-}
+  let userData = {
+    first_name,
+    last_name,
+    country,
+    dob,
+    email,
+    password,
+    confirm_password,
+    phoneCountry,
+    phoneNumber,
+  };
   const handleSubmit = async (e) => {
     e.preventDefault();
-setLoader(true)
+    setLoader(true);
     try {
-      await axios.post("https://mock-server-686g.onrender.com/blueRegister", userData);
-      setLoader(false)
+      await axios.post(
+        "https://mock-server-686g.onrender.com/blueRegister",
+        userData
+      );
+      setLoader(false);
       toast({
-        title: 'Account created.',
+        title: "Account created.",
         description: "We've created your account for BlueApple.",
-        status: 'success',
+        status: "success",
         duration: 5000,
         isClosable: true,
-      })
+      });
     } catch (err) {
       console.error(err);
-      setLoader(false)
+      setLoader(false);
     }
   };
 
-if(loader===true){
-    return  <Image src="https://thumbs.gfycat.com/RipeLastIcefish-size_restricted.gif" m={"auto"} w="30%"/>
-}
+  if (loader === true) {
+    return (
+      <Image
+        src="https://thumbs.gfycat.com/RipeLastIcefish-size_restricted.gif"
+        m={"auto"}
+        w="30%"
+      />
+    );
+  }
   return (
     <>
-{loader === true ? <Image src="https://thumbs.gfycat.com/RipeLastIcefish-size_restricted.gif" /> :console.log("error")}
+      {loader === true ? (
+        <Image src="https://thumbs.gfycat.com/RipeLastIcefish-size_restricted.gif" />
+      ) : (
+        console.log("error")
+      )}
       <MetaData title={"Create Your BlueApple ID - BlueApple(IN)"} />
       <Box w={"100%"} borderBottom="1px solid gray">
         <Flex justifyContent={"space-evenly"} gap={10} alignItems="center">
@@ -116,7 +129,7 @@ if(loader===true){
                 w={"30%"}
                 h={50}
                 fontSize="22px"
-                onChange={(e)=>setFirst_name(e.target.value)}
+                onChange={(e) => setFirst_name(e.target.value)}
               />
               <Input
                 placeholder="last name"
@@ -124,7 +137,7 @@ if(loader===true){
                 w={"30%"}
                 h={50}
                 fontSize="22px"
-                onChange={(e)=>setLast_name(e.target.value)}
+                onChange={(e) => setLast_name(e.target.value)}
               />
             </Flex>
             <Box mt={5}>
@@ -135,7 +148,7 @@ if(loader===true){
                   w={"65%"}
                   h={50}
                   fontSize="20px"
-                  onChange={(e)=>setCountry(e.target.value)}
+                  onChange={(e) => setCountry(e.target.value)}
                 >
                   <option value="india">India</option>
                   <option value="pakistan">Pakistan</option>
@@ -148,7 +161,7 @@ if(loader===true){
                 w={"65%"}
                 h={50}
                 fontSize="22px"
-                onChange={(e)=>setDob(e.target.value)}
+                onChange={(e) => setDob(e.target.value)}
               />
               <br />
             </Box>
@@ -163,7 +176,7 @@ if(loader===true){
                 h={50}
                 type="email"
                 fontSize="22px"
-                onChange={(e)=>setEmail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <Text ml={"-35%"} color="gray">
                 This will be your new Apple ID.
@@ -176,7 +189,7 @@ if(loader===true){
                 mt="1%"
                 h={50}
                 fontSize="22px"
-                onChange={(e)=>setPassword(e.target.value)}
+                onChange={(e) => setPassword(e.target.value)}
               />
               <Input
                 placeholder="confirm password"
@@ -186,7 +199,7 @@ if(loader===true){
                 mt="1%"
                 h={50}
                 fontSize="22px"
-                onChange={(e)=>setConfirm_password(e.target.value)}
+                onChange={(e) => setConfirm_password(e.target.value)}
               />
             </Box>
             <Box w={"100%"} mt={5} mb={5}>
@@ -200,7 +213,7 @@ if(loader===true){
                   h={50}
                   fontSize="20px"
                   border={"1px solid gray"}
-                  onChange={(e)=>setPhoneCountry(e.target.value)}
+                  onChange={(e) => setPhoneCountry(e.target.value)}
                 >
                   <option value="+91">+91 India</option>
                   <option value="+86">+86 China</option>
@@ -214,7 +227,7 @@ if(loader===true){
                 mt="1%"
                 h={50}
                 fontSize="22px"
-                onChange={(e)=>setPhoneNumber(e.target.value)}
+                onChange={(e) => setPhoneNumber(e.target.value)}
               />
             </Box>
             <Box m={"auto"} mt="2%">

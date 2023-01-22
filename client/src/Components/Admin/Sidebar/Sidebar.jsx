@@ -49,8 +49,8 @@ const navMenu = [
 ];
 
 const Sidebar = () => {
-  const toast = useToast()
-  const handleLogout =()=>{
+  const toast = useToast();
+  const handleLogout = () => {
     toast({
       title: "Logged Out successfully",
       description: "Redirecting To The Home",
@@ -59,7 +59,7 @@ const Sidebar = () => {
       isClosable: true,
     });
     window.location.replace("/");
-  }
+  };
   return (
     <>
       <Box borderRadius={10}>
@@ -88,7 +88,19 @@ const Sidebar = () => {
                 </Link>
               </Box>
             ))}
-            <Button mt={5} fontSize={20} className={styles.admin_bar} color="#f8e68a" onClick={handleLogout} fontWeight={"bold"} bg={"black"} _hover={{bg:"teal" , color:"black"}}><LogoutIcon />Logout</Button>
+          <Button
+            mt={5}
+            fontSize={20}
+            className={styles.admin_bar}
+            color="#f8e68a"
+            onClick={handleLogout}
+            fontWeight={"bold"}
+            bg={"black"}
+            _hover={{ bg: "teal", color: "black" }}
+          >
+            <LogoutIcon />
+            Logout
+          </Button>
         </Box>
       </Box>
     </>

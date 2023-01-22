@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Image, Text } from "@chakra-ui/react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Link } from "react-router-dom";
 
 const responsive = {
   superLargeDesktop: {
@@ -32,6 +33,7 @@ const content = [
     cl: "orange",
     title: "iPhone 14 Pro Leather Case with MagSafe - Ink",
     price: "MRP ₹5900.00 (Incl. of all taxes)",
+    ref: "/SingleProduct",
   },
   {
     src: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MPRY3?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1666123999266",
@@ -75,20 +77,31 @@ const StoreCarouselfour = () => {
       <Carousel responsive={responsive}>
         {content &&
           content.map((el, i) => (
-            <Box key={i} w="95%" h={450} borderRadius={20} transition="0.5s all ease-in-out" _hover={{transform: "scale(1.02)"}} bg="white" textAlign="left">
-              <Image src={el.src} borderRadius={20} alt="error" w={"100%"}/>
-              <Box pl={5}>
-                <Text  fontSize={15} color={el.cl}>
-                  {el.head}
-                </Text>
-                <Text fontSize={22} color="black">
-                  {el.title}
-                </Text>
-                <Text f fontSize={18} mt="5%" color="gray">
-                  {el.price}
-                </Text>
+            <Link to={el.ref}>
+              <Box
+                key={i}
+                w="95%"
+                h={450}
+                borderRadius={20}
+                transition="0.5s all ease-in-out"
+                _hover={{ transform: "scale(1.02)" }}
+                bg="white"
+                textAlign="left"
+              >
+                <Image src={el.src} borderRadius={20} alt="error" w={"100%"} />
+                <Box pl={5}>
+                  <Text fontSize={15} color={el.cl}>
+                    {el.head}
+                  </Text>
+                  <Text fontSize={22} color="black">
+                    {el.title}
+                  </Text>
+                  <Text f fontSize={18} mt="5%" color="gray">
+                    {el.price}
+                  </Text>
+                </Box>
               </Box>
-            </Box>
+            </Link>
           ))}
       </Carousel>
     </Box>

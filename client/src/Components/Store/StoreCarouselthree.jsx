@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Image} from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -44,8 +44,14 @@ const StoreCarouselthree = () => {
       <Carousel responsive={responsive}>
         {content &&
           content.map((el, i) => (
-            <Box key={i} borderRadius={10} transition="0.5s all ease-in-out" _hover={{transform: "scale(1.02)"}} mr="1%">
-            <Image src={el.src}/>
+            <Box
+              key={i}
+              borderRadius={10}
+              transition="0.5s all ease-in-out"
+              _hover={{ transform: "scale(1.02)" }}
+              mr="1%"
+            >
+              <Image src={el.src} />
             </Box>
           ))}
       </Carousel>

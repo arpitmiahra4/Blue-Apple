@@ -15,14 +15,17 @@ const OneComponent = () => {
         backgroundColor={"white"}
       >
         <Flex justifyContent={"space-evenly"}>
-          <Box w={"542px"} h={"329px"}
+          <Box
+            w={"542px"}
+            h={"329px"}
             className={styles.ipad_iOne}
             // border={"1px solid red"}
             // mt={"20px"}
           ></Box>
-          <Box pt={1}
-        //    border={"1px solid teal"} 
-           >
+          <Box
+            pt={1}
+            //    border={"1px solid teal"}
+          >
             <Flex alignItems={"center"} justifyContent="center" mb={"10px"}>
               <AiFillApple color="black" fontSize={100} />
               <Text color={"black"} fontSize={100} fontWeight="bold">

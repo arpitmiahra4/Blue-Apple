@@ -345,9 +345,15 @@ const Navbar = () => {
                 </MenuButton>
                 <MenuList bg={"#313132"}>
                   <MenuGroup fontSize={20} title="Profile" bg={"#313132"}>
-                  <Link to="/login"><MenuItem bg={"#313132"}>Login</MenuItem></Link>
-                  <Link to="/register"><MenuItem bg={"#313132"}>Register</MenuItem></Link>
-                  <Link to="/admin"><MenuItem bg={"#313132"}>BlueApple DashBoard</MenuItem></Link>
+                    <Link to="/login">
+                      <MenuItem bg={"#313132"}>Login</MenuItem>
+                    </Link>
+                    <Link to="/register">
+                      <MenuItem bg={"#313132"}>Register</MenuItem>
+                    </Link>
+                    <Link to="/admin">
+                      <MenuItem bg={"#313132"}>BlueApple DashBoard</MenuItem>
+                    </Link>
                   </MenuGroup>
                 </MenuList>
               </Menu>

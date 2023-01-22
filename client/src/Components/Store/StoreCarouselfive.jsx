@@ -68,13 +68,22 @@ const StoreCarouselfive = () => {
       <Carousel responsive={responsive}>
         {content &&
           content.map((el, i) => (
-            <Box key={i} w="95%" h={450} borderRadius={20} transition="0.5s all ease-in-out" _hover={{transform: "scale(1.02)"}} bg="white" textAlign="left">
-              <Image src={el.src} borderRadius={20} alt="error" w={"100%"}/>
+            <Box
+              key={i}
+              w="95%"
+              h={450}
+              borderRadius={20}
+              transition="0.5s all ease-in-out"
+              _hover={{ transform: "scale(1.02)" }}
+              bg="white"
+              textAlign="left"
+            >
+              <Image src={el.src} borderRadius={20} alt="error" w={"100%"} />
               <Box pl={5}>
-                <Text  fontSize={15} color={el.cl}>
+                <Text fontSize={15} color={el.cl}>
                   {el.head}
                 </Text>
-                <Text  fontSize={22} color="black">
+                <Text fontSize={22} color="black">
                   {el.title}
                 </Text>
                 <Text f fontSize={18} mt="5%" color="gray">

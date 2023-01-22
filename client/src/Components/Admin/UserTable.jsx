@@ -12,7 +12,7 @@ import MetaData from "../Home/MetaData";
 const UserTable = () => {
   return (
     <>
-    <MetaData title="Admin UserTable" />
+      <MetaData title="Admin UserTable" />
       <Box w={"100%"} py={"1%"} pl="1%" pr="1%" bg={"white"}>
         <Flex gap={"1%"}>
           <Box
@@ -76,7 +76,9 @@ const UserTable = () => {
                       >
                         D.O.B
                       </Th>
-                      <Th borderBottomColor="#56577A" color="#f8e68a">Role</Th>
+                      <Th borderBottomColor="#56577A" color="#f8e68a">
+                        Role
+                      </Th>
                     </Tr>
                   </Thead>
                   <Tbody>

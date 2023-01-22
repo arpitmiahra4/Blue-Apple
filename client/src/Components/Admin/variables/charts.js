@@ -150,7 +150,7 @@ export const lineChartOptionsDashboard = {
   },
   grid: {
     strokeDashArray: 5,
-    borderColor: "#56577A"
+    borderColor: "#56577A",
   },
   fill: {
     type: "gradient",
@@ -183,7 +183,6 @@ export const lineChartOptionsProfile1 = {
       show: false,
     },
     redrawOnParentResize: true,
-
   },
   tooltip: {
     theme: "dark",
@@ -239,7 +238,7 @@ export const lineChartOptionsProfile1 = {
   grid: {
     show: false,
     strokeDashArray: 5,
-    borderColor: "#56577A"
+    borderColor: "#56577A",
   },
   fill: {
     type: "gradient",
@@ -271,7 +270,7 @@ export const lineChartOptionsProfile2 = {
     toolbar: {
       show: false,
     },
-    redrawOnParentResize: true
+    redrawOnParentResize: true,
   },
   tooltip: {
     theme: "dark",
@@ -327,7 +326,7 @@ export const lineChartOptionsProfile2 = {
   grid: {
     show: false,
     strokeDashArray: 5,
-    borderColor: "#56577A"
+    borderColor: "#56577A",
   },
   fill: {
     type: "gradient",

@@ -9,7 +9,7 @@ const Grid3Ipad = () => {
       <SimpleGrid className={styles.ipad_b3Grid}>
         {/* iCloud box */}
         <Box
-        //   border={"1px solid teal"}
+          //   border={"1px solid teal"}
           pt={"10px"}
           pb={"40px"}
           backgroundColor={"white"}
@@ -36,7 +36,7 @@ const Grid3Ipad = () => {
             </Text>
             <Box
               className={styles.ipad_iCloud}
-            //   border={"1px solid red"}
+              //   border={"1px solid red"}
               mt={"20px"}
             ></Box>
           </Box>
@@ -44,7 +44,7 @@ const Grid3Ipad = () => {
 
         {/* iPay box */}
         <Box
-        //   border={"1px solid teal"}
+          //   border={"1px solid teal"}
           pt={"10px"}
           pb={"40px"}
           backgroundColor={"white"}
@@ -75,7 +75,7 @@ const Grid3Ipad = () => {
             </Text>
             <Box
               className={styles.ipad_iPay}
-            //   border={"1px solid red"}
+              //   border={"1px solid red"}
               mt={"20px"}
             ></Box>
           </Box>

@@ -11,13 +11,7 @@ import watch4 from "../../../assets/img/avatars/watch4.jpg";
 import iphone5 from "../../../assets/img/avatars/iphone5.jpg";
 // Custom icons
 import { AiOutlineExclamation } from "react-icons/ai";
-import {
-  FaArrowDown,
-  FaArrowUp,
-  FaFilePdf,
-
-} from "react-icons/fa";
-
+import { FaArrowDown, FaArrowUp, FaFilePdf } from "react-icons/fa";
 
 export const ORDERTableData = [
   {
@@ -26,7 +20,7 @@ export const ORDERTableData = [
     domain: "Mackbook",
     status: "IN",
     date: "799$",
-    color:"#48bb78",
+    color: "#48bb78",
   },
   {
     logo: iphone2,
@@ -34,7 +28,7 @@ export const ORDERTableData = [
     domain: "Iphone",
     status: "IN",
     date: "499$",
-    color:"#48bb78",
+    color: "#48bb78",
   },
   {
     logo: ipad3,
@@ -42,7 +36,7 @@ export const ORDERTableData = [
     domain: "Ipad",
     status: "IN",
     date: "499$",
-    color:"#48bb78",
+    color: "#48bb78",
   },
   {
     logo: watch4,
@@ -50,18 +44,17 @@ export const ORDERTableData = [
     domain: "Watch",
     status: "IN",
     date: "499$",
-    color:"#48bb78",
+    color: "#48bb78",
   },
   {
     logo: iphone5,
     name: "Iphone 13 pro max",
     domain: "Iphone",
     status: "OUT",
-    color:"#48bb78",
+    color: "#48bb78",
     date: "499$",
   },
-]
-
+];
 
 export const tablesTableData = [
   {
@@ -109,7 +102,6 @@ export const tablesTableData = [
     status: "Online",
     date: "21/01/21",
   },
-  
 ];
 
 export const tablesProjectData = [

@@ -13,6 +13,7 @@ import Home from "../Pages/Home";
 import Ipad from "../Pages/Ipad";
 import Iphone from "../Pages/Iphone";
 import Mac from "../Pages/Mac";
+import Bag from "../Pages/product/Bag";
 import SingleProduct from "../Pages/product/SingleProduct";
 import Store from "../Pages/Store";
 import Support from "../Pages/Support";
@@ -40,6 +41,7 @@ const AllRoutes = () => {
       <Route path="/myProfile" element={<MyProfile />}></Route>
       <Route path="/reviewsTable" element={<ReviewsTable />}></Route>
       <Route path="/singleProduct" element={<SingleProduct />}></Route>
+      <Route path="/bag" element={<Bag />}></Route>
     </Routes>
   );
 };

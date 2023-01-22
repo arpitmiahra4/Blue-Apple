@@ -66,20 +66,15 @@ const StoreCarouselone = () => {
   return (
     <Box w="100%" mt={"5%"}>
       <Carousel responsive={responsive}>
-          {content &&
-            content.map((el, i) => (
-              <Box key={i} h="150px" w={"100%"}>
-                <Image src={el.src} alt="error" h={"110px"}/>
-                  <Text
-                    fontWeight="650"
-                    fontSize={18}
-                    color="black"
-                    mt={"6%"}
-                  >
-                    {el.text}
-                  </Text>
-              </Box>
-            ))}
+        {content &&
+          content.map((el, i) => (
+            <Box key={i} h="150px" w={"100%"}>
+              <Image src={el.src} alt="error" h={"110px"} />
+              <Text fontWeight="650" fontSize={18} color="black" mt={"6%"}>
+                {el.text}
+              </Text>
+            </Box>
+          ))}
       </Carousel>
     </Box>
   );

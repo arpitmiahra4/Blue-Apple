@@ -81,9 +81,9 @@ function ProductTableRow(props) {
         </Text>
       </Td>
       <Td border={lastItem ? "none" : null} borderBottomColor="#56577A">
-        <Button p="0px" bg={"red"} variant="no-hover">
+        <Button p="0px" bg={"red"} variant="no-hover" >
           <Text fontSize="sm" color="black" fontWeight="bold" cursor="pointer">
-            Edit
+            Check
           </Text>
         </Button>
       </Td>

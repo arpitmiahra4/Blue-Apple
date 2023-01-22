@@ -7,7 +7,6 @@ const Grid1Ipad = () => {
   return (
     <>
       <SimpleGrid className={styles.ipad_bgrid} w={"96%"} ml={"2%"}>
-
         {/* 3% Daily Cash box */}
         <Box
           // border={"1px solid teal"}
@@ -20,16 +19,22 @@ const Grid1Ipad = () => {
               Get 3% Daily Cash
             </Text>
             <Text color={"black"} fontSize={40} fontWeight="bold" mt={"-3"}>
-            back with Apple Card.
+              back with Apple Card.
             </Text>
 
             <Text color={"black"} fontSize={21} fontWeight="400" mt={"15px"}>
-            And pay over time, interest‑free
+              And pay over time, interest‑free
             </Text>
             <Text color={"black"} fontSize={21} fontWeight="400" mt={"-1"}>
-            when you choose to check out with
+              when you choose to check out with
             </Text>
-            <Text color={"black"} fontSize={21} fontWeight="400" mt={"-1"} mb={"15px"}>
+            <Text
+              color={"black"}
+              fontSize={21}
+              fontWeight="400"
+              mt={"-1"}
+              mb={"15px"}
+            >
               Apple Card Monthly Installments.*
             </Text>
 
@@ -50,10 +55,8 @@ const Grid1Ipad = () => {
           </Box>
         </Box>
 
-
-
-         {/* 3% Daily Cash box */}
-         <Box
+        {/* 3% Daily Cash box */}
+        <Box
           // border={"1px solid teal"}
           pt={"10px"}
           pb={"0px"}
@@ -61,24 +64,29 @@ const Grid1Ipad = () => {
         >
           <Box pt={5}>
             <Text color={"black"} fontSize={40} fontWeight="bold">
-            Trade in your current
+              Trade in your current
             </Text>
             <Text color={"black"} fontSize={40} fontWeight="bold" mt={"-3"}>
-            iPad and get credit
+              iPad and get credit
             </Text>
             <Text color={"black"} fontSize={40} fontWeight="bold" mt={"-3"}>
-            toward a new one.
+              toward a new one.
             </Text>
 
             <Text color={"black"} fontSize={21} fontWeight="400" mt={"15px"}>
-            With Apple Trade In, just give us your
+              With Apple Trade In, just give us your
             </Text>
             <Text color={"black"} fontSize={21} fontWeight="400" mt={"-1"}>
-            eligible iPad and get credit for a new one.
+              eligible iPad and get credit for a new one.
             </Text>
-            <Text color={"black"} fontSize={21} fontWeight="400" mt={"-1"} mb={"15px"}>
-            It’s good for you and the planet.**
-
+            <Text
+              color={"black"}
+              fontSize={21}
+              fontWeight="400"
+              mt={"-1"}
+              mb={"15px"}
+            >
+              It’s good for you and the planet.**
             </Text>
 
             <Text
@@ -97,8 +105,6 @@ const Grid1Ipad = () => {
             ></Box>
           </Box>
         </Box>
-
-       
       </SimpleGrid>
     </>
   );

@@ -1,14 +1,11 @@
-import { useMediaQuery } from '@chakra-ui/react';
+import { useMediaQuery } from "@chakra-ui/react";
 
 export const useMedia = () => {
-    
-    const [smallScreen] = useMediaQuery('(min-width: 570px)')
-    const [mediumScreen] = useMediaQuery('(min-width: 1023px)')
-    const [midBr] = useMediaQuery('(min-width: 840px)')
-    return { smallScreen,mediumScreen,midBr }
-}
-
-
+  const [smallScreen] = useMediaQuery("(min-width: 570px)");
+  const [mediumScreen] = useMediaQuery("(min-width: 1023px)");
+  const [midBr] = useMediaQuery("(min-width: 840px)");
+  return { smallScreen, mediumScreen, midBr };
+};
 
 // for using media query in your page do---
 // const { smallScreen,mediumScreen,largeScreen } = useMedia()
@@ -19,4 +16,3 @@ export const useMedia = () => {
 // <Text>{!largeScreen?"large":!mediumScreen?"mid":!smallScreen?"smaal":"other"} </Text> wrong way
 
 //notice don't use largeScreen this is only for me
-

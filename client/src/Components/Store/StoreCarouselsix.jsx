@@ -50,12 +50,32 @@ const StoreCarouselsix = () => {
       <Carousel responsive={responsive}>
         {content &&
           content.map((el, i) => (
-            <Box key={i} borderRadius={10} w="95%" transition="0.5s all ease-in-out" _hover={{transform: "scale(1.02)"}} boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px;" bgImage={el.src} bgSize="cover" bgPosition={"center"} zIndex="1" bgRepeat={"no-repeat"}  mr="1%" h="500px">
-            <Box textAlign={"left"} pl="20px" py={5}>
-              <Text color={"gray"} fontSize={16} fontWeight="500">{el.head}</Text>
-              <Text color={"black"}  fontSize={42} fontWeight="500">{el.title}</Text>
-              <Text fontWeight="normal" color={"black"} fontSize={20}>{el.dis}</Text>
-            </Box>
+            <Box
+              key={i}
+              borderRadius={10}
+              w="95%"
+              transition="0.5s all ease-in-out"
+              _hover={{ transform: "scale(1.02)" }}
+              boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px;"
+              bgImage={el.src}
+              bgSize="cover"
+              bgPosition={"center"}
+              zIndex="1"
+              bgRepeat={"no-repeat"}
+              mr="1%"
+              h="500px"
+            >
+              <Box textAlign={"left"} pl="20px" py={5}>
+                <Text color={"gray"} fontSize={16} fontWeight="500">
+                  {el.head}
+                </Text>
+                <Text color={"black"} fontSize={42} fontWeight="500">
+                  {el.title}
+                </Text>
+                <Text fontWeight="normal" color={"black"} fontSize={20}>
+                  {el.dis}
+                </Text>
+              </Box>
             </Box>
           ))}
       </Carousel>

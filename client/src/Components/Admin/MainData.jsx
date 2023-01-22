@@ -34,7 +34,7 @@ const MainData = () => {
         "https://mock-server-686g.onrender.com/blueRegister"
       );
       console.log(res.data);
-        setUser(res.data.length)
+      setUser(res.data.length);
     } catch (err) {
       console.error(err.response);
     }
@@ -45,7 +45,7 @@ const MainData = () => {
         "https://mock-server-686g.onrender.com/products"
       );
       console.log(res.data);
-        setProduct(res.data.length)
+      setProduct(res.data.length);
     } catch (err) {
       console.error(err.response);
     }
@@ -104,7 +104,12 @@ const MainData = () => {
                 <Text fontSize="sm" color="#f8e68a" fontWeight="bold">
                   Welcome back,
                 </Text>
-                <Text fontSize="28px" color="#f8e68a" fontWeight="bold" mb="18px">
+                <Text
+                  fontSize="28px"
+                  color="#f8e68a"
+                  fontWeight="bold"
+                  mb="18px"
+                >
                   Arpit Mishra
                 </Text>
               </Box>
@@ -129,7 +134,12 @@ const MainData = () => {
               <Card p="28px 0px 0px 0px" bg={"black"}>
                 <CardHeader mb="20px" ps="22px">
                   <Flex direction="column" alignSelf="flex-start">
-                    <Text fontSize="lg" color="#f8e68a" fontWeight="bold" mb="6px">
+                    <Text
+                      fontSize="lg"
+                      color="#f8e68a"
+                      fontWeight="bold"
+                      mb="6px"
+                    >
                       Sales Overview
                     </Text>
                     <Text fontSize="md" fontWeight="medium" color="gray.400">

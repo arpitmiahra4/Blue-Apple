@@ -23,10 +23,10 @@ const GridBigIpad = () => {
               </Text>
             </Flex>
             <Text color={"white"} fontSize={21} fontWeight="400">
-            Get 3 months of Apple TV+ free
+              Get 3 months of Apple TV+ free
             </Text>
             <Text color={"white"} fontSize={21} fontWeight="400" mt={"-1.5"}>
-            when you buy an iPad.
+              when you buy an iPad.
             </Text>
 
             <Flex justifyContent={"center"} gap="2%" mt={"10px"}>
@@ -56,7 +56,6 @@ const GridBigIpad = () => {
             ></Box>
           </Box>
         </Box>
-        
 
         {/* iMusic box */}
         <Box
@@ -73,10 +72,10 @@ const GridBigIpad = () => {
               </Text>
             </Flex>
             <Text color={"black"} fontSize={21} fontWeight="400">
-            Over 100 million songs.
+              Over 100 million songs.
             </Text>
             <Text color={"black"} fontSize={21} fontWeight="400" mt={"-1.5"}>
-            Start listening for free today.
+              Start listening for free today.
             </Text>
 
             <Flex justifyContent={"center"} gap="2%" mt={"10px"}>
@@ -105,10 +104,6 @@ const GridBigIpad = () => {
           </Box>
         </Box>
 
-
-
-
-
         {/* iFitness+ box */}
         <Box
           // border={"1px solid teal"}
@@ -125,12 +120,10 @@ const GridBigIpad = () => {
               </Text>
             </Flex>
             <Text color={"black"} fontSize={21} fontWeight="400">
-            Get 3 months free
+              Get 3 months free
             </Text>
             <Text color={"black"} fontSize={21} fontWeight="400" mt={"-1.5"}>
-            when you buy an iPad.7
-
-
+              when you buy an iPad.7
             </Text>
 
             <Flex justifyContent={"center"} gap="2%" mt={"10px"}>
@@ -158,7 +151,6 @@ const GridBigIpad = () => {
             ></Box>
           </Box>
         </Box>
-        
 
         {/* iArcade box */}
         <Box
@@ -176,10 +168,10 @@ const GridBigIpad = () => {
               </Text>
             </Flex>
             <Text color={"black"} fontSize={21} fontWeight="400">
-            Get 3 months of Apple Arcade free
+              Get 3 months of Apple Arcade free
             </Text>
             <Text color={"black"} fontSize={21} fontWeight="400" mt={"-1.5"}>
-            when you buy an iPad.
+              when you buy an iPad.
             </Text>
 
             <Flex justifyContent={"center"} gap="2%" mt={"10px"}>
@@ -208,8 +200,8 @@ const GridBigIpad = () => {
           </Box>
         </Box>
 
-         {/* iNews+ box */}
-         <Box
+        {/* iNews+ box */}
+        <Box
           // border={"1px solid teal"}
           pt={"10px"}
           pb={"0px"}
@@ -224,22 +216,21 @@ const GridBigIpad = () => {
               </Text>
             </Flex>
             <Text color={"black"} fontSize={21} fontWeight="400">
-            Get 3 months of Apple News+ free
+              Get 3 months of Apple News+ free
             </Text>
             <Text color={"black"} fontSize={21} fontWeight="400" mt={"-1.5"}>
-            when you buy an iPad.9
+              when you buy an iPad.9
             </Text>
 
-              <Text
-                color={"#175590"}
-                fontWeight="bold"
-                fontSize={20}
-                mt={"10px"}
-                _hover={{ textDecoration: "underline" }}
-              >
-                Learn more &gt;
-              </Text>
-          
+            <Text
+              color={"#175590"}
+              fontWeight="bold"
+              fontSize={20}
+              mt={"10px"}
+              _hover={{ textDecoration: "underline" }}
+            >
+              Learn more &gt;
+            </Text>
           </Box>
         </Box>
 
@@ -259,9 +250,9 @@ const GridBigIpad = () => {
               </Text>
             </Flex>
             <Text color={"black"} fontSize={21} fontWeight="400">
-            For everything and everyone.
+              For everything and everyone.
             </Text>
-            <Flex justifyContent={"center"} gap="2%" mt={"10px"} >
+            <Flex justifyContent={"center"} gap="2%" mt={"10px"}>
               <Text
                 color={"#175590"}
                 fontWeight="bold"
@@ -287,65 +278,72 @@ const GridBigIpad = () => {
           </Box>
         </Box>
 
-         {/* Apple and Education box */}
-         <Box
+        {/* Apple and Education box */}
+        <Box
           // border={"1px solid teal"}
           pt={"0px"}
           pb={"0px"}
           backgroundColor={"white"}
         >
           <Box pt={5} className={styles.ipad_iAppleEducation}>
-            
-              <Text color={"white"} fontSize={40} fontWeight="bold" mt={"20px"} mb={"10px"}>
-                {" "}
-                Apple and Education
-              </Text>
-            
-            <Text color={"white"} fontSize={21} fontWeight="400">
-            Empowering educators and students to
-            </Text>
-            <Text color={"white"} fontSize={21} fontWeight="400" mt={"-1.5"}>
-            move the world forward.
+            <Text
+              color={"white"}
+              fontSize={40}
+              fontWeight="bold"
+              mt={"20px"}
+              mb={"10px"}
+            >
+              {" "}
+              Apple and Education
             </Text>
 
-              <Text
-                color={"white"}
-                fontWeight="bold"
-                fontSize={20}
-                mt={"10px"}
-                _hover={{ textDecoration: "underline" }}
-              >
-                Learn more &gt;
-              </Text>
-           
+            <Text color={"white"} fontSize={21} fontWeight="400">
+              Empowering educators and students to
+            </Text>
+            <Text color={"white"} fontSize={21} fontWeight="400" mt={"-1.5"}>
+              move the world forward.
+            </Text>
+
+            <Text
+              color={"white"}
+              fontWeight="bold"
+              fontSize={20}
+              mt={"10px"}
+              _hover={{ textDecoration: "underline" }}
+            >
+              Learn more &gt;
+            </Text>
           </Box>
         </Box>
 
-         {/* Apple at Work box */}
-         <Box
+        {/* Apple at Work box */}
+        <Box
           // border={"1px solid teal"}
           pt={"0px"}
           pb={"0px"}
           backgroundColor={"white"}
         >
           <Box pt={5} className={styles.ipad_iAppleAtWork}>
-            
-              <Text color={"white"} fontSize={40} fontWeight="bold" mt={"20px"} mb={"10px"}>
-                {" "}
-                Apple at Work
-              </Text>
-  
-              <Text
-                color={"white"}
-                fontWeight="bold"
-                fontSize={20}
-                mt={"10px"}
-                _hover={{ textDecoration: "underline" }}
-              >
-                Learn more &gt;
-              </Text>
-           
-            
+            <Text
+              color={"white"}
+              fontSize={40}
+              fontWeight="bold"
+              mt={"20px"}
+              mb={"10px"}
+            >
+              {" "}
+              Apple at Work
+            </Text>
+
+            <Text
+              color={"white"}
+              fontWeight="bold"
+              fontSize={20}
+              mt={"10px"}
+              _hover={{ textDecoration: "underline" }}
+            >
+              Learn more &gt;
+            </Text>
           </Box>
         </Box>
       </SimpleGrid>

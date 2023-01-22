@@ -1,6 +1,5 @@
-import { Box, Flex, Image} from '@chakra-ui/react';
-import React, { useEffect, useState } from 'react'
-
+import { Box, Flex, Image } from "@chakra-ui/react";
+import React, { useEffect, useState } from "react";
 
 const slides = [
   {
@@ -65,33 +64,33 @@ const HomeCarousel = () => {
   }, [slidesCount]);
   return (
     <>
-    <Flex
-      w="full"
-      mt={"1%"}
-      bg="#edf3f8"
-      _dark={{
-        bg: "#3e3e3e",
-      }}
-      alignItems="center"
-      justifyContent="center"
-    >
-      <Flex w="full" overflow="hidden">
-        <Flex pos="relative" h="700px" w="full" {...carouselStyle}>
-          {slides.map((slide, sid) => (
-            <Box key={`slide-${sid}`} flex="none" boxSize="full" shadow="md">
-              <Image
-                src={slide.img}
-                alt="carousel image"
-                boxSize="full"
-                backgroundSize="cover"
-              />
-            </Box>
-          ))}
+      <Flex
+        w="full"
+        mt={"1%"}
+        bg="#edf3f8"
+        _dark={{
+          bg: "#3e3e3e",
+        }}
+        alignItems="center"
+        justifyContent="center"
+      >
+        <Flex w="full" overflow="hidden">
+          <Flex pos="relative" h="700px" w="full" {...carouselStyle}>
+            {slides.map((slide, sid) => (
+              <Box key={`slide-${sid}`} flex="none" boxSize="full" shadow="md">
+                <Image
+                  src={slide.img}
+                  alt="carousel image"
+                  boxSize="full"
+                  backgroundSize="cover"
+                />
+              </Box>
+            ))}
+          </Flex>
         </Flex>
       </Flex>
-    </Flex>
     </>
-  )
-}
+  );
+};
 
-export default HomeCarousel
+export default HomeCarousel;

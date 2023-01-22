@@ -16,7 +16,6 @@ const FiveGridsComponent = () => {
         <Text
           mt={"85px"}
           mb={"65px"}
-          
           textAlign={"center"}
           fontWeight="700"
           fontSize={55}
@@ -578,7 +577,13 @@ const FiveGridsComponent = () => {
           </Box>
         </Flex>
         <Box>
-          <Flex justifyContent={"center"} gap="4%" mt={"70px"} mb={"30px"} pb={"70px"}>
+          <Flex
+            justifyContent={"center"}
+            gap="4%"
+            mt={"70px"}
+            mb={"30px"}
+            pb={"70px"}
+          >
             <Text
               color={"#175590"}
               fontWeight="bold"

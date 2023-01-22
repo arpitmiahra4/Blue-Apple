@@ -2,6 +2,7 @@ import { Box, Button, Flex, Image, Text, useToast } from "@chakra-ui/react";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { BsBookmark, BsTruck } from "react-icons/bs";
+import MetaData from "../../Components/Home/MetaData";
 // import { dataUrl } from "../../URL/AllUrl";
 const SingleProduct = () => {
   const [data, setData] = useState([]);
@@ -12,20 +13,21 @@ const SingleProduct = () => {
       .catch((err) => console.log(err.message));
   }, []);
   console.log(data);
-  const toast = useToast()
-  const Buyit =()=>{
+  const toast = useToast();
+  const Buyit = () => {
     toast({
-        title: 'Order Placed',
-        description: "",
-        status: 'success',
-        position:'top',
-        duration: 5000,
-        isClosable: true,
-      })
-  }
+      title: "Added To Bag",
+      description: "Successfully",
+      status: "success",
+      duration: 5000,
+      isClosable: true,
+    });
+    window.location.replace("/Bag");
+  };
 
   return (
     <>
+      <MetaData title={"BlueApple Single Product Section"} />
       <Box w={"70%"} m="auto" h={"92vh"} textAlign="left">
         {data &&
           data.map((el, i) => (
@@ -71,7 +73,7 @@ const SingleProduct = () => {
                   color={"white"}
                   bg="#0071e3"
                   fontWeight={"bold"}
-                  _hover={{bg:"black" , color:"red"}}
+                  _hover={{ bg: "black", color: "red" }}
                   mt={2}
                   fontSize={20}
                   borderRadius={10}

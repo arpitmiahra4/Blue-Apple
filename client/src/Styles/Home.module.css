@@ -1,96 +1,96 @@
 /* home page css */
-.arpit_one{
-    background-image: url("https://www.apple.com/v/home/aw/images/heroes/iphone-14-pro/hero_iphone14pro__e5xbgo5ffhg2_large.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 700px;
-    z-index: 1;
-    background-size: cover;
-    cursor: pointer;
+.arpit_one {
+  background-image: url("https://www.apple.com/v/home/aw/images/heroes/iphone-14-pro/hero_iphone14pro__e5xbgo5ffhg2_large.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 700px;
+  z-index: 1;
+  background-size: cover;
+  cursor: pointer;
 }
-.arpit_two{
-    background-image: url("https://www.apple.com/in/home/heroes/iphone-14/images/hero_iphone14_preorder__c4g2wjzuugqe_large.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 700px;
-    z-index: 1;
-    background-size: cover;
-    cursor: pointer;
+.arpit_two {
+  background-image: url("https://www.apple.com/in/home/heroes/iphone-14/images/hero_iphone14_preorder__c4g2wjzuugqe_large.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 700px;
+  z-index: 1;
+  background-size: cover;
+  cursor: pointer;
 }
-.arpit_third{
-    background-image: url("https://www.apple.com/v/home/aw/images/heroes/apple-watch-series-8/hero_apple_watch_series_8__bjc1ok5mkjua_large.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 600px;
-    z-index: 1;
-    background-size: cover;
-    cursor: pointer;
+.arpit_third {
+  background-image: url("https://www.apple.com/v/home/aw/images/heroes/apple-watch-series-8/hero_apple_watch_series_8__bjc1ok5mkjua_large.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 600px;
+  z-index: 1;
+  background-size: cover;
+  cursor: pointer;
 }
 
 /* Grid component css */
-.arpit_gone{
-    background-image: url("https://www.apple.com/in/home/promos/apple-watch-ultra/images/promo_apple_watch_ultra__gnsqulvdc4a6_large.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 580px;
-    z-index: 1;
-    background-size: cover;
-    cursor: pointer; 
+.arpit_gone {
+  background-image: url("https://www.apple.com/in/home/promos/apple-watch-ultra/images/promo_apple_watch_ultra__gnsqulvdc4a6_large.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 580px;
+  z-index: 1;
+  background-size: cover;
+  cursor: pointer;
 }
-.arpit_gtwo{
-    background-image: url("https://www.apple.com/v/home/aw/images/promos/ipad-pro/promo_ipadpro__ch217v9v7no2_large.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 580px;
-    z-index: 1;
-    background-size: cover;
-    cursor: pointer; 
+.arpit_gtwo {
+  background-image: url("https://www.apple.com/v/home/aw/images/promos/ipad-pro/promo_ipadpro__ch217v9v7no2_large.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 580px;
+  z-index: 1;
+  background-size: cover;
+  cursor: pointer;
 }
-.arpit_gthree{
-    background-image: url("https://www.apple.com/v/home/aw/images/promos/ipad/promo_ipad__fioegapg12qi_large.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 580px;
-    z-index: 1;
-    background-size: cover;
-    cursor: pointer; 
+.arpit_gthree {
+  background-image: url("https://www.apple.com/v/home/aw/images/promos/ipad/promo_ipad__fioegapg12qi_large.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 580px;
+  z-index: 1;
+  background-size: cover;
+  cursor: pointer;
 }
-.arpit_gfour{
-    background-image: url("https://www.apple.com/v/home/aw/images/promos/macbook-air/promo_macbookair__fywl7i82fueu_large.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 580px;
-    z-index: 1;
-    background-size: cover;
-    cursor: pointer; 
+.arpit_gfour {
+  background-image: url("https://www.apple.com/v/home/aw/images/promos/macbook-air/promo_macbookair__fywl7i82fueu_large.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 580px;
+  z-index: 1;
+  background-size: cover;
+  cursor: pointer;
 }
-.arpit_gfive{
-    background-image: url("https://www.apple.com/v/home/aw/images/promos/apple-tv-4k/promo_tv4k__d33vaocbii82_large.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 580px;
-    z-index: 1;
-    background-size: cover;
-    cursor: pointer; 
+.arpit_gfive {
+  background-image: url("https://www.apple.com/v/home/aw/images/promos/apple-tv-4k/promo_tv4k__d33vaocbii82_large.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 580px;
+  z-index: 1;
+  background-size: cover;
+  cursor: pointer;
 }
-.arpit_gsix{
-    background-image: url("https://www.apple.com/v/home/aw/images/promos/arcade-episode-xoxo/xoxo_promo__czow8gsh0gk2_large.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 580px;
-    z-index: 1;
-    background-size: cover;
-    cursor: pointer; 
+.arpit_gsix {
+  background-image: url("https://www.apple.com/v/home/aw/images/promos/arcade-episode-xoxo/xoxo_promo__czow8gsh0gk2_large.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 580px;
+  z-index: 1;
+  background-size: cover;
+  cursor: pointer;
 }
-.arpit_bgrid{
+.arpit_bgrid {
+  margin-top: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+@media (max-width: 739px) {
+  .arpit_bgrid {
     margin-top: 10px;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 10px;
+  }
 }
-@media (max-width: 739px){
-    .arpit_bgrid{
-        margin-top: 10px;
-        grid-template-columns: repeat(1,1fr);
-        gap: 10px;
-    } 
-} 
