@@ -39,9 +39,21 @@ const MainData = () => {
       console.error(err.response);
     }
   };
+  const pp = async () => {
+    try {
+      const res = await axios.get(
+        "https://mock-server-686g.onrender.com/products"
+      );
+      console.log(res.data);
+        setProduct(res.data.length)
+    } catch (err) {
+      console.error(err.response);
+    }
+  };
 
   useEffect(() => {
     fetchData();
+    pp();
   }, []);
   return (
     <>
