@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Image, Input, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Input, Text } from "@chakra-ui/react";
 import axios from "axios";
 import React from "react";
 import styles from "../../Styles/Store.module.css";
@@ -81,6 +81,7 @@ const Login = () => {
             minH="600"
             borderRadius="10px"
             className={styles.gyay_teal}
+            bgColor="black"
           >
             <Box mt="20%" w={"80%"} ml="10%">
               <Text
@@ -88,44 +89,45 @@ const Login = () => {
                 textAlign="left"
                 className={styles.text_login}
                 fontWeight="bold"
-                color={"black"}
+                color="#a08615"
               >
                 Login Here !
               </Text>
               <Box>
                 <Flex alignItems={"center"} gap="2%" pl={5} py={5}>
-                  <AiOutlineUser size={40} color="black" />
+                  <AiOutlineUser size={40} color="#a08615" />
                   <Input
                     w={"80%"}
                     borderRadius={20}
-                    border="2px solid black"
+                    border="2px solid #a08615"
                     textAlign={"center"}
                     fontSize={18}
                     fontWeight="400"
                     type="email"
                     placeholder="Email / BlueApple ID"
-                    color={"black"}
+                    color="white"
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </Flex>
                 <Flex alignItems={"center"} gap="2%" pl={5} py={5}>
-                  <AiFillLock size={40} color="black" />
+                  <AiFillLock size={40} color="#a08615" />
                   <Input
                     w={"80%"}
                     borderRadius={20}
-                    border="2px solid black"
+                    border="2px solid #a08615"
                     textAlign={"center"}
                     fontSize={18}
                     fontWeight="400"
                     type="password"
                     placeholder="Password / BlueApple Password"
-                    color={"black"}
+                    color="white"
                     onChange={(e) => setPassword(e.target.value)}
                   />
                 </Flex>
                 <Button
-                  bg={"#313132"}
-                  color="white"
+                  mt={"50px"}
+                  bg="black"
+                  color="#a08615"
                   _hover={{
                     color: "teal",
                     bg: "#313132",
@@ -133,37 +135,14 @@ const Login = () => {
                   }}
                   w={"40%"}
                   h="50px"
-                  border="2px solid Black"
+                 borderRadius={20}
+                    border="2px solid teal"
                   fontSize={25}
-                  fontWeight="semibold"
+                  fontWeight="bold"
                   onClick={handleLogin}
                 >
                   Login
                 </Button>
-                <br />
-                <Flex alignItems={"center"} mt="1%" gap={2}>
-                  <Image
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/768px-Google_%22G%22_Logo.svg.png"
-                    w={"60px"}
-                    h="40px"
-                  />
-                  <Button
-                    bg={"#313132"}
-                    color="White"
-                    _hover={{
-                      color: "teal",
-                      bg: "#313132",
-                      border: "2px solid #7ac6eb",
-                    }}
-                    w={"80%"}
-                    h="50px"
-                    border="2px solid Black"
-                    fontSize={25}
-                    fontWeight="semibold"
-                  >
-                    continue with Google
-                  </Button>
-                </Flex>
               </Box>
             </Box>
           </Box>
